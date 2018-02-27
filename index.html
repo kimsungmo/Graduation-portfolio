@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script src="./js/basic.js"></script>
+	<script src="./js/bluetooth.js"></script>
+	<script src="./js/workoutsetting.js"></script>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+<div data-role="page" id="main">
+	<div data-role="header" data-position="fixed"><h1>메인화면</h1></div>
+	<div data-role="content">
+		<button id="worksetting">운동설정</button><br>
+		<button id="myrecord">내 기록 조회</button><br>
+		<button id="ranking">랭킹 조회</button>
+	</div>
+</div>
+
+<div data-role="page" id="worksettingpage">
+	<div data-role="header" data-position="fixed"><h1>운동설정</h1></div>
+	<div data-role="content">
+		<div>운동 종목 :
+		 	<input type="radio" name="workout" value="덤벨 컬"/>덤벨 컬
+		 	<input type="radio" name="workout" value="팔굽혀펴기"/>팔굽혀펴기
+		 	<input type="radio" name="workout" value="스쿼트"/>스쿼트
+		 	<input type="radio" name="workout" value="레터럴 레이즈"/>레터럴 레이즈
+		 </div>
+		 <table>
+		    <tr><th>세트</th><th>반복</th><th>중량</th></tr>
+		    <tr>
+		    	<td><input class="setting" type="text" name="sets" /></td>
+		    	<td><input class="setting" type="text" name="reps" /></td>
+		    	<td><input class="setting" type="text" name="weight" /></td>
+		    </tr>
+		 </table>
+		<button id="searchingdumbbell">아령찾기</button>
+	</div>
+</div>
+
+<div data-role="page" id="dumbbellconn">
+	<div data-role="header" data-position="fixed"><h1>아령찾기</h1></div>
+	<div data-role="content">
+		<div data-role="content">
+            <div data-role="button" id="btnCreate">블루투스 연결</div>
+            <div id="divAdapter"></div>
+            <div data-role="button" id="btnDiscovery">아령 찾기</div>
+            	아령이 검색되지 않으면 아령의 스위치를 껐다 켜주세요
+            <ul data-role="listview" id="listDevice" data-fastscroll="true">
+            </ul>        
+        </div><!-- /content -->
+		
+	</div>
+</div>
+
+<div data-role="page" id="pageDetail">
+	<div data-role="header" data-position="fixed">
+	    <h1>아령 연결 후 운동 시작</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+	    <label>선택된디바이스</label>
+	    <input type="text" id="txtDeviceName">
+	    <input type="text" id="txtDeviceAddress">
+	    <div data-role="button" id="btnDevice">아령 연결하기</div>
+	    <div id="divDeviceInfo"></div>
+	    <hr/>
+	    현재 반복 횟수<div id="divReceiveData"></div> <!-- 여기에 아두이노에서 받아온 count 값이 출력됨. -->
+		<button id="workoutstart">운동시작</button>
+	</div>
+</div>
+
+<div data-role="page" id="start">
+	<div data-role="header" data-position="fixed"><h1>운동시작</h1></div>
+	<div data-role="content">
+		현재 반복 횟수
+		<div id="divReceiveData"></div> <!-- 여기에 아두이노에서 받아온 count 값이 출력됨. -->
+	    <table>
+	   		<tr><th>종목</th><th>세트</th><th>반복</th><th>중량</th></tr>
+	   		<tr><td id="wo"></td><td id="st"></td><td id="rp"></td><td id="we"></td></tr>
+	    </table>
+	    <button onclick="printing()">세트 출력</button>              
+    </div><!-- /content -->
+</div>
+
+<div data-role="page" id="myrec">
+	<div data-role="header" data-position="fixed"><h1>내 기록 조회</h1></div>
+	<div data-role="content">
+		select로 날짜, 운동별로 선택해서 조회할 수 있게
+	</div>
+</div>
+
+<div data-role="page" id="rank">
+	<div data-role="header" data-position="fixed"><h1>랭킹 조회</h1></div>
+	<div data-role="content">
+		select로 날짜, 운동별로 선택해서 조회할 수 있게
+	</div>
+</div>
+
+</body>
+</html>
