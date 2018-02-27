@@ -1,0 +1,91 @@
+<!--출처 에버디벨-->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Dodumbbell SignUp</title>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="../js/mySignupForm.js"></script>
+<link rel="stylesheet" href="../css/mySignupForm.css" />
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <h1 class="title">Dodumbbell</h1>
+        <form name="signUp" action="./memberSave.php" method="post" onsubmit="return checkSubmit()" target="ifrm">
+            <iframe name="ifrm" frameborder="0" width="0" height="0"></iframe>
+            <div class="line">
+                <p>아이디</p>
+                <div class="inputArea">
+                    <input type="text" name="memberId" class="memberId" />
+                </div>
+                <div class="memberIdCheck">중복 확인</div> <!--mySignupForm.js에서 확인-->
+                <div class="memberIdComment comment"></div>
+            </div>
+            <div class="line">
+                <p>비밀번호</p>
+                <div class="inputArea">
+                    <input type="password" name="memberPw" class="memberPw" />
+                    <div class="memberPwComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>비밀번호 확인</p>
+                <div class="inputArea">
+                    <input type="password" name="memberPw2" class="memberPw2"  />
+                    <div class="memberPw2Comment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>이름</p>
+                <div class="inputArea">
+                    <input type="text" name="memberName" class="memberName" />
+                </div>
+            </div>
+            <div class="line">
+                <p>성별</p>
+                <div class="radio">
+                    <input type="radio" name="memberSex" value="남자" class="memberSex">남자</input>
+                    <input type="radio" name="memberSex" value="여자" class="memberSex">여자</input>
+                </div>
+            </div>
+            <div class="line">
+                <p>닉네임</p>
+                <div class="inputArea">
+                    <input type="text" name="memberNickName" class="memberNickName"  />
+                    <div class="memberNickNameComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>이메일</p>
+                <div class="inputArea">
+                    <input type="text" name="memberEmailAddress" class="memberEmailAddress" />
+                    <div class="memberEmailAddressComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>생일</p>
+                <div class="inputArea">
+                    <input type="text" name="memberBirthDay" class="memberBirthDay" value="ex) 19xx.xx.xx" />
+                    <div class="memberBirthDayComment comment" ></div>
+
+                </div>
+            </div>
+            <div class="line">
+                <input type="submit" value="Ⅴ 가입하기" class="submit" />
+            </div>
+            
+        </form>
+        <div class="line">
+            <button value="로그인하기" class="submit" onclick="location.href='main.html'">로그인하기</button>
+        </div>
+        <div class="formCheck">
+            <input type="hidden" name="idCheck" class="idCheck" />
+            <input type="hidden" name="pw1Check" class="pwCheck1" />
+            <input type="hidden" name="pw2Check" class="pwCheck2" />
+            <input type="hidden" name="eMailCheck" class="eMailCheck" />
+        </div>
+    </div>
+</div>
+</body>
+</html>
