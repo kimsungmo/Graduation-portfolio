@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+</head>
+<body>
+	<div data-role="page" id="workset">
+	<div data-role="header" data-position="fixed"><h1>운동설정</h1></div>
+	<br>
+	<div data-role="content">
+		<div id="workout">운동 종목</div>
+			<input type="radio" name="workout" value="덤벨 컬"/>덤벨 컬
+			<input type="radio" name="workout" value="푸시업"/>푸시 업
+			<input type="radio" name="workout" value="스쾃"/>스쾃
+			<input type="radio" name="workout" value="레터럴 레이즈"/>레터럴 레이즈
+			<br>
+			<table>
+			   <tr><th>세트</th><th>반복</th><th>중량</th></tr>
+			   <tr>
+			   	<td><input class="setting" type="text" name="sets" id="sets"/></td>
+			   	<td><input class="setting" type="text" name="reps" id="reps"/></td>
+			   	<td><input class="setting" type="text" name="weight" id="weight"/></td>
+			   </tr>
+			   <tr>
+			   <td></td>
+			   <td> 
+			   <a href="blue.html" data-role="button">
+			   			<button onclick="confirm()">아령찾기</button>
+			   		</a>
+			   		<!-- table for button on the middle -->
+			   		<!-- <a data-role="button" data-inline="true">
+						<button onclick="confirm()">아령찾기</button> 
+					</a>
+					<button type="button" id="find">아령찾기</button>-->
+				</td>
+				<td></td>
+			   </tr>
+			</table>
+			<!-- <a class="printing" data-role="button" data-inline="true">
+				<button class="printing">선택 항목 출력</button>
+			</a> -->
+			<button type="button" id="btn" onclick="confirm()">내가 선택한 운동 확인</button>
+            <div id="prnt"></div>
+		</div>
+	</div>
+		
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Single-Page</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body>
+    <div data-role="page" id="pageList">
+        <div data-role="header" data-position="fixed">
+            <h1>블루투스검색</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div data-role="button" id="btnCreate">블루투스 연결</div>
+            <div id="divAdapter"></div>
+            <div data-role="button" id="btnDiscovery">주변기기찾기</div>
+            <ul data-role="listview" id="listDevice" data-fastscroll="true">
+            </ul>
+            <div data-role="header" data-position="fixed">
+            <h1>블루투스데이터전송</h1>
+        	</div><!-- /header -->
+        	<label>선택된디바이스</label>
+            <input type="text" id="txtDeviceName">
+            <input type="text" id="txtDeviceAddress">
+            <div data-role="button" id="btnDevice">디바이스연결</div>
+            <div id="divDeviceInfo"></div>
+            <hr/>
+            <input type="text" id="txtSendData">
+            <div data-role="button" id="btnSendData">데이터보내기</div>
+            <div id="divReceiveData"></div> <!-- 여기에 아두이노에서 받아온 count 값이 출력됨. -->
+        </div><!-- /content -->
+    </div><!-- /page -->
+    
+	<script src="./lib/jquery.js"></script>
+			<script src="./lib/tau/mobile/js/tau.js"></script>
+		
+     	<script src="./js/bluetooth.js"></script>
+     
+</body>
+</html>

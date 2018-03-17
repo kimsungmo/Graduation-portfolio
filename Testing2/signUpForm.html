@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>회원가입 폼</title>
+   	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+</head>
+<body>
+    <div id="container">
+    <div data-role="header" data-position="fixed"><h1>회원가입</h1></div>
+    <iframe name="ifrm" frameborder="0" width="0" height="0"></iframe>
+        <form name="signUp" method="post" action="http://115.68.232.116/member/memberSave.php"  onsubmit="return checkSubmit()" target="ifrm">
+            <div class="line">
+                <p>아이디</p>
+                <div class="inputArea">
+                    <input type="text" name="memberId" id="memberId"/>
+                </div>
+                <button class="memberIdCheck">중복 확인</button>
+                <div class="memberIdComment comment"></div>
+            </div>
+            <div class="line">
+                <p>이름</p>
+                <div class="inputArea">
+                    <input type="text" name="memberName" class="memberName" />
+                </div>
+            </div>
+            <div class="line">
+                <p>비밀번호</p>
+                <div class="inputArea">
+                    <input type="password" name="memberPw" id="memberPw" />
+                </div>
+            </div>
+            <div class="line">
+                <p>비밀번호 확인</p>
+                <div class="inputArea">
+                    <input type="password" name="memberPw2" id="memberPw2"  />
+                    <div class="memberPw2Comment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>닉네임</p>
+                <div class="inputArea">
+                    <input type="text" name="memberNickName" class="memberNickName"  />
+                    <div class="memberNickNameComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>이메일</p>
+                <div class="inputArea">
+                    <input type="text" name="memberEmailAddress" class="memberEmailAddress" />
+                    <div class="memberEmailAddressComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <p>생일</p>
+                <div class="inputArea">
+                    <input type="text" name="memberBirthDay" class="memberBirthDay" />
+                    <div class="memberBirthDayComment comment"></div>
+                </div>
+            </div>
+            <div class="line">
+                <input type="submit" value="가입하기" class="submit" />
+            </div>
+        </form>
+
+        <div class="formCheck">
+            <input type="hidden" name="idCheck" id="idCheck"/>
+            <input type="hidden" name="pw2Check" id="pwCheck2"/>
+            <input type="hidden" name="eMailCheck" class="eMailCheck"/>
+        </div>
+    </div>
+    <script src="./js/mySignUpForm.js"></script>
+</body>
+</html>
