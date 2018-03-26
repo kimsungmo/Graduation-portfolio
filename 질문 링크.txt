@@ -1,3 +1,4 @@
+Tizen Developer Forums - Web Application Development
 https://developer.tizen.org/forums/web-application-development/wearable-how-can-i-communicate-arduino-using-bluetooth
 https://developer.tizen.org/forums/web-application-development/how-connect-db-and-web-app-python
 https://developer.tizen.org/forums/web-application-development/where-lists-on-left-side-web-simulator
@@ -9,3 +10,12 @@ https://developer.tizen.org/forums/web-application-development/error-opening-fil
 https://developer.tizen.org/forums/web-application-development/why-dont-button-work
 https://developer.tizen.org/forums/web-application-development/get-values-html
 https://developer.tizen.org/forums/web-application-development/db-server-access-problem-maybe.-it-works-on-browser-not-tizen-phone.
+
+PHPSCHOOL
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291114&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291150&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291218&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291258&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291274&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291385&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
+https://www.phpschool.com/gnuboard4/bbs/board.php?bo_table=qna_html&wr_id=291386&sca=&sfl=wr_name%7C%7Csubject&stx=%C0%DA%BA%C1%BD%BA%C5%A9%B8%B3%C6%AE%B8%A6&sop=and&spt=-85021&page=1
