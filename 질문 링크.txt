@@ -1,0 +1,11 @@
+https://developer.tizen.org/forums/web-application-development/wearable-how-can-i-communicate-arduino-using-bluetooth
+https://developer.tizen.org/forums/web-application-development/how-connect-db-and-web-app-python
+https://developer.tizen.org/forums/web-application-development/where-lists-on-left-side-web-simulator
+https://developer.tizen.org/forums/web-application-development/tizen-bluetooth-webapp-onsocketerror
+https://developer.tizen.org/forums/web-application-development/unity-program-tizen-webapp
+https://developer.tizen.org/forums/web-application-development/how-make-server-tizen-web-app
+https://developer.tizen.org/forums/web-application-development/data-sending-db-server-z3-phone.
+https://developer.tizen.org/forums/web-application-development/error-opening-file-no-such-file-or-directory
+https://developer.tizen.org/forums/web-application-development/why-dont-button-work
+https://developer.tizen.org/forums/web-application-development/get-values-html
+https://developer.tizen.org/forums/web-application-development/db-server-access-problem-maybe.-it-works-on-browser-not-tizen-phone.
