@@ -4,15 +4,15 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eb4Du6Vwm35+NkBkPiFllAXcdpHDiUEYIoLazGvFdKA=</DigestValue>
+<DigestValue>w8cMbxFL5kzcjTgL/oZ5zg7IxdIQ0odpziympXWfIVA=</DigestValue>
 </Reference>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>FdiQW2tJjrOdlMZsZg7tC2N7hiRVI3JM7Zkl7CCto5o=</DigestValue>
+<DigestValue>R7eE4sUdayivafsZi3zFn+bGbwJ5qArlG6fxqO6feho=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>UHtGGqlzJNk0JZN0RF7EuMZLEVb4tRFW8/rKY37xn0c=</DigestValue>
+<DigestValue>K0Jze05ZvQKUC53l6HVNyRhl9qW6+GETle70g51bPrY=</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>s7Dv6qL2WMEHp5ztXRulvNstE5z0tdrk6jDxOtvQByU=</DigestValue>
+<DigestValue>pN4FqIOJyyvpYb990KhbnEpOMcWqF3E5SihL6UF6pqw=</DigestValue>
 </Reference>
 <Reference URI="js%2Fbluetooth.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -40,7 +40,7 @@
 </Reference>
 <Reference URI="js%2FmainToSignUp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8EKLofILn1UcC4s+N5v7UDnj9qXgnjzCZm3AstcE7nE=</DigestValue>
+<DigestValue>FQoRJ9dj4/0HydijQCbuLOkG1L9CCd55ftC64oWk9F0=</DigestValue>
 </Reference>
 <Reference URI="js%2FmySignInForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -48,7 +48,7 @@
 </Reference>
 <Reference URI="js%2FmySignUpForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>YGKPz4hgobutCVLRl9wuop5ND7baSUqainIWWFJSdbg=</DigestValue>
+<DigestValue>AACewCjMoaKumgS01wlW1iu8L5uZKqU+NlYEkI/WU9Q=</DigestValue>
 </Reference>
 <Reference URI="js%2FsettingToBlue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2544,15 +2544,15 @@
 </Reference>
 <Reference URI="selection.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>cBwP2Zu0jvug5C3582LeT7UP6uCDaxWUrIRVmiBvyO4=</DigestValue>
+<DigestValue>cyjYNoa0m63NH1KcqTCfLt8WKP+ojB07gskZ+WIvNjs=</DigestValue>
 </Reference>
-<Reference URI="signUpForm.html">
+<Reference URI="signup%2FsignUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>CN7u++T/dIsTu6E90rA9Itt5Aa0D2bopNSI+zBW+fno=</DigestValue>
+<DigestValue>Pn19tbramdt536wpNAEAqpJXoZol/BRq69sjbJSiP+k=</DigestValue>
 </Reference>
 <Reference URI="worksettingpage.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>4jKZE+237Pj01sooXUkSmKcnO4yCruQgPmL0hNfql34=</DigestValue>
+<DigestValue>nX69gnuOTutCm6BAN1u1/T+114GlGdCPkXoZs3CDpNk=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -2563,11 +2563,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-KhOoprVihv19BC9C6AkISbSF2/PU+8yGe13/iYmGfBkdIeny72GHkKIDsIQJnxjp+xbJR5Ba76x0
-H39wgzuU8Xy5uLUhVeTMcJMy6DnjAwvs2JFUMfGk6QxTLp5V3sVzjYRy0xB+dX+Xp8CogPIX/lQo
-iHqg/Z6XkRvk72W28GBT70OT28ORY/OXfE+NSvJAj04kuUvOtm7cXrAXZP3/jIM1huQ6DtEOiAxz
-o8s3tQ1S0LjLEH5KCY7QcAlbECQHhtZ8NzKOQne0y+6izqd+h2FXqYpPYS/1SwXCSH4O/X0zl+Ls
-MSehFcCtUvgf84rbTBLn/k2v2pKDY7DWISy2yg==
+P33MjasEPqRfsL9QuXDSOJONimUt1clm/MnnCoiVxdyY4zhad4ZBH3n6bol7mkc7llvqPRSvhEnW
+rTdAunsowa+B1cwjJ9jzNEUuAuO2OU2JZbAD50Smnd/ofQpMgX0fecvv+GYUWvpbNpuXWGsiwokC
+ZdMTk0Nxi3QplNqkFLs9v5g+VZkLlNJM90R55eaTOZEtJrrrjVYC9nBnEKUfpeCeJtBSzixzQHMJ
+B5HvEn4zFGvkOlyVQ+Fyip94Kgn3U/S/2tHO8Qx13S+PGUnDpJiPkhVIl0Ho+hS4JQZK9OULrMet
+Vq8b1OXuNZ/nbj7AhogAs8D4a+kxt2WoLPLbtg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

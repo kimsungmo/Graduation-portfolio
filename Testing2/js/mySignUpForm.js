@@ -102,8 +102,7 @@ function checkSubmit(){
         res = false;
     }
     if(res == false){
-       //alert('회원가입 폼을 정확히 채워 주세요.');
-    	alert(res);
+       alert('회원가입 폼을 정확히 채워 주세요.');
     }
     alert(res);
     return res;
