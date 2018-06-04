@@ -12,6 +12,9 @@
                 }
             } else {
                 window.history.back();
+                //alert("back");
+                //screen.unlockOrientation();
+                screen.lockOrientation("portrait");
             }
         }
     } );

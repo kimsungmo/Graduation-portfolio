@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>h/B8hcWqguBP1x+tELEG6ZVkoNeEgjpo+fQSaeAXJ1k=</DigestValue>
+<DigestValue>hCvmkJKOJgiio5umygX6n+OvDBRcxugB096FvkkWXY8=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -12,11 +12,7 @@
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>7xSscB3AeaH/qHdxQtAj9aDrk4xrIWcJfsMiAmgxfMg=</DigestValue>
-</Reference>
-<Reference URI="daterank.html">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>FVPLhdEljHFCVipudwsABuWvftvo2rRcTBMgWGVO9h8=</DigestValue>
+<DigestValue>gMfny6PRkXoKD9D5inSIXrL0OsIItJzeMFDs1aoXbeo=</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,23 +20,35 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>BHfSz1WgCtSpfcEWk4OtQVRiEXDXvz8QgHSknkzmfDw=</DigestValue>
+<DigestValue>TSpRtsinEHth2/lIXjFLsorU6R7wkWtfnUsVEv2HHu0=</DigestValue>
 </Reference>
-<Reference URI="js%2Fbluetooth.js">
+<Reference URI="js%2FChart.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>wtRIdAPyn2v2zT2cjplvjMDdzElCeKHsyreJJEq3oas=</DigestValue>
+<DigestValue>CfcERD4Ov4+lKbWbYqXD6aFM9M51gN4GUEtDhkWABMo=</DigestValue>
 </Reference>
-<Reference URI="js%2Floginandworkout.js">
+<Reference URI="js%2Fback.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>JG+FrsX6RL/UxuuSkocr+XIeGo+3zSvO6lXlJiNPR5I=</DigestValue>
+<DigestValue>FTEbC4Ze6mLmn+/A3Wagmm7wLLErPEuPtP1pM9d3LMQ=</DigestValue>
 </Reference>
-<Reference URI="js%2Fmain.js">
+<Reference URI="js%2Fblue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>hSKC+6Od2CbiEBkZFdFyRvnbIjpCJkDxzhcSOPmSSeA=</DigestValue>
+<DigestValue>vZHUpAtRWbgJF1e76LJ/ZCRUeJbP+ku8btB0757HUz4=</DigestValue>
+</Reference>
+<Reference URI="js%2FblueTooth.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>gd5rp2SzlZcTSy2Wv5COgPEveEzvdl9aaWxlbQLHqA4=</DigestValue>
+</Reference>
+<Reference URI="js%2FloginAndWorkout.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>NQwN05ZcJWTvlFCBwB7KoDnRZ4cVH1ING5j1kE5uKjk=</DigestValue>
 </Reference>
 <Reference URI="js%2FmainToSignInSignUp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>5mSWG7jqAb/qOpBzyaYgj0eHPoNtpqR/DXyy/5k0IkQ=</DigestValue>
+</Reference>
+<Reference URI="js%2FmyDateRecord.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>9tUsUJiproqiydF4aFax0IHFsnX4RasoJTbNoIL4UQQ=</DigestValue>
 </Reference>
 <Reference URI="js%2FmySignInForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -50,6 +58,10 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>GGiMapYG+mR7ZfdkaLdmW7ElI7l14JTJth9TALZ5JyI=</DigestValue>
 </Reference>
+<Reference URI="js%2FmyWoRecrod.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>vR0m0qtHnwHS57DL8mV0/G4mplQk21RbX2ErGbQxHwY=</DigestValue>
+</Reference>
 <Reference URI="js%2FsettingToBlue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>PV+TGFJzxqEPd5ZgRBMUcDrPltp6nf0GC4lg+h8sL00=</DigestValue>
@@ -58,9 +70,9 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>FcmNHwhF3TBdkEDEukSUAyAAoxl4C7C904d3W/LLM98=</DigestValue>
 </Reference>
-<Reference URI="js%2Fwomyrec.js">
+<Reference URI="js%2FwoRank.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>vR0m0qtHnwHS57DL8mV0/G4mplQk21RbX2ErGbQxHwY=</DigestValue>
+<DigestValue>AsRQMRhqLIndtHVzBRuSGR+zEiSKRMznWEWw5RNB7GA=</DigestValue>
 </Reference>
 <Reference URI="lib%2Fjquery.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2538,37 +2550,41 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>OGRsfqg2+sXu07QNoHP1fm+dEMGQpLIJzWNKoOb7af4=</DigestValue>
 </Reference>
-<Reference URI="myrecord.html">
+<Reference URI="myDateRecord.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>R2gqpJSBE9fHUZrykj+S05Z10UouJXcYJEN72qXeUSM=</DigestValue>
+<DigestValue>YkLIxCoUedatEyArixagnRgiR7aGbV+zrVu3AZN0nrw=</DigestValue>
+</Reference>
+<Reference URI="myWoRecord.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>5GxycM+EoG3zP2EXTL3h6ZSqKcZ7kNAV+npEF6IEzKM=</DigestValue>
+</Reference>
+<Reference URI="pageChar.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>a4Ey/3N1qSrbEcwEC3ex6pn5wYYe0dT+MWNqSjtPrHc=</DigestValue>
 </Reference>
 <Reference URI="selection.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+P/k7dQk3WNeg79/8AQ11R4wfL8kiR3xmNK8DSqCY7I=</DigestValue>
+<DigestValue>Yw65sp2s+4DLM4hm/fqTiExqTOsVw58Xg4I8L+dz4Vw=</DigestValue>
 </Reference>
 <Reference URI="signIn.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Yd3u6zEPchCKyHo7R9u4v85SLX19Ezu6RWheobuBR/w=</DigestValue>
+<DigestValue>3A37ChJgcpRyjqJlT2NN03G9CI7+Yl05uTRlVU9SzDo=</DigestValue>
 </Reference>
 <Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>+m9M7IeYM7dWlX39vvSqgpJJU52J3+n8FEQ6ibioGJ4=</DigestValue>
+<DigestValue>s3PJ/Ux1Q+2HrTTrMnsi1ST/5bq0UfjkmKgDFSLe/u4=</DigestValue>
 </Reference>
 <Reference URI="signup%2FsignUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>s6pQPKUfSV3xR7Gw/xtXyofFuWxon9NI8LFtBHAxO2g=</DigestValue>
 </Reference>
-<Reference URI="womyrecord.html">
+<Reference URI="woRank.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Yh5lMoDFrGwRzho6oLojni+/fedM94qXuZy7kAC+Z6s=</DigestValue>
+<DigestValue>FOy64Cl3EUChuT1cdP5sNX50nDPJf/rX4WP74cDajgU=</DigestValue>
 </Reference>
-<Reference URI="worank.html">
+<Reference URI="workSettingPage.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>y9h+LPZ6T/Ao5Ze4o+yaF9E5ADP5eMY0VkhIySl2dZ4=</DigestValue>
-</Reference>
-<Reference URI="worksettingpage.html">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8LtIc7tOj5B8ZWwUFKagOcXD+6+aZ+QCCNzZ3uPDUBY=</DigestValue>
+<DigestValue>H0BRZv5sG++KQqHGjeKubGoPJ346vd2e8mzcDSqw2N0=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -2579,11 +2595,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-EEFWt69Gfaei76zDNPani1TJr8kbSQdAuH/jsDpf7acrKLRB3wo/u8IACiRLusgVGwcCkSLrLBGp
-X2ejLmBEQBC+5DzSgHVAWBiXioAyJeZ68y7Z2dPhdYRfUpWIuN5Ay5rHVzws/R86qR/wh1OyIXkC
-ePinLPiGRTP2GNOIo6T1CqPJpkHXmvbZD/n0VfxP+svALUo8zB4N2exrFClZZ5XYjUBEg1e35BkK
-7xyObQbChpUAHlJSkhC23kroxDRUOlplNhD/lnNaiGbShIcqiGMrrmW/XGWiEzN09a7QCiroXTaR
-8zsmAwMW/2whBUGHnvKSRv0fp11rUfYJ29N10g==
+jU2eaJVHva/2P0jGbtb7kyu2un/ADa1bmrUe2l7xFrDtoTgC6Sjef3qk+BbQXOSgUtxOVvFBoP27
+kwhcEvS0EvDYs8NFfjyP7hdb8FwzBhml+cfFns3zZyAs5m+X/u0zX/rfYOoHVJ53+sqgCycJdh/L
+Euum5kSnbLi2ye9gIjkFcbv3LlrKNRdgbJohI9SCBSKU0KthVUFB7Lw37ux9s90rru3L8TPbKFrd
+V6OS0TlvBVJhddDcTjiJNxd7AWfwKZXDC1+cYcMJ1jTkUNnZnuRrZr+IvYr/b89FayOBnGayW6b4
+4tIUSJsAz1K7cyLp5GSXk9uYEWbPml6NEzVaYQ==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

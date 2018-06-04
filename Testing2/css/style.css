@@ -25,3 +25,12 @@ div #selects{
 .button{
 	margin:auto;
 }
+canvas {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+form {display:inline-block;}
+#canv{
+	width:100%;
+}

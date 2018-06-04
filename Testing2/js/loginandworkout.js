@@ -14,6 +14,8 @@ $(function(){
                     console.log(json.res);
                     tau.changePage("selection.html"); //페이지 전환 시 이렇게 해야 함.
                 }else{
+                	alert(memberId.val());
+                	alert(memberPw.val())
                     alert("아이디 또는 비밀번호가 일치하지 않습니다.");
                 }
             },
