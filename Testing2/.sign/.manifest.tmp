@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 blue.html__DEL__hCvmkJKOJgiio5umygX6n+OvDBRcxugB096FvkkWXY8=
 config.xml__DEL__K0Jze05ZvQKUC53l6HVNyRhl9qW6+GETle70g51bPrY=
 css/style.css__DEL__gMfny6PRkXoKD9D5inSIXrL0OsIItJzeMFDs1aoXbeo=
@@ -16,6 +17,20 @@ js/settingToBlue.js__DEL__PV+TGFJzxqEPd5ZgRBMUcDrPltp6nf0GC4lg+h8sL00=
 js/slct.js__DEL__FcmNHwhF3TBdkEDEukSUAyAAoxl4C7C904d3W/LLM98=
 js/woRank.js__DEL__AsRQMRhqLIndtHVzBRuSGR+zEiSKRMznWEWw5RNB7GA=
 lib/jquery.js__DEL__z6aVFjdeJ+VlGcrnHyiBjg5SUVtw5wWmANHbRZmYM1o=
+=======
+config.xml__DEL__UHtGGqlzJNk0JZN0RF7EuMZLEVb4tRFW8/rKY37xn0c=
+css/style.css__DEL__7xSscB3AeaH/qHdxQtAj9aDrk4xrIWcJfsMiAmgxfMg=
+icon.png__DEL__1d0oEZHqPn+QzNzGIHwj9ODby6x9ggFs9uOsav6jPNs=
+js/bluetooth.js__DEL__UVk7plqkB2vi0AE5VZs+LxmzOAJXzta9/R51GdW8kHw=
+js/loginandworkout.js__DEL__1psr0mGFr0wv6J9Hb3nI4yXeNinkL9KpDVaBcUaSYLI=
+js/main.js__DEL__hSKC+6Od2CbiEBkZFdFyRvnbIjpCJkDxzhcSOPmSSeA=
+js/mainToSignUp.js__DEL__8EKLofILn1UcC4s+N5v7UDnj9qXgnjzCZm3AstcE7nE=
+js/mySignInForm.js__DEL__eZ4sJkKWPTUDaP4eh2RnnoFzT5T3JhYq5ItgIzN/lBQ=
+js/mySignUpForm.js__DEL__YGKPz4hgobutCVLRl9wuop5ND7baSUqainIWWFJSdbg=
+js/settingToBlue.js__DEL__0167rkcZgVJXUc3XpF/22ijashP4IPyBkjl9sq6LePk=
+js/slct.js__DEL__zFgn3eFgY0SeXlQYf0mKRT+8Zj9WuvmwozcrIY8LRow=
+lib/jquery.js__DEL__uo8gOp675XcfSby+CAQHkkDHIl9L5qtCR2m/v7NevDU=
+>>>>>>> parent of 4bda59c... Before changing saving project.
 lib/phantom.fix.js__DEL__VLj6cfSOanTWKsOf8fWCQvEK0cAa73bOuSGCx9reTN4=
 lib/tau/mobile/js/cultures/globalize.culture.af-ZA.js__DEL__xJN+Lao5/QmarQQRR8OM5hUWu1HxmaV2drsXV1QeONA=
 lib/tau/mobile/js/cultures/globalize.culture.af.js__DEL__R8EchiFDByDAAKJid2lNkhiJs1JDQzrBPl/bxNExnZA=
@@ -634,6 +649,7 @@ lib/tau/mobile/theme/default/tau.css__DEL__G5er6cYRlS9bEc4+Tb/qrhQo6TIhOJ3apl8pH
 lib/tau/mobile/theme/default/tau.min.css__DEL__eJPPUynScbbRQswjIpHvGfzK3NAp9lZFVPnolFs5fE4=
 lib/tau/mobile/theme/default/theme.js__DEL__aNZtpUArjN9hVFK2UODcVp+5c8SU8CuZsqL0ekosf5A=
 lib/tau/mobile/theme/default/theme.min.js__DEL__OGRsfqg2+sXu07QNoHP1fm+dEMGQpLIJzWNKoOb7af4=
+<<<<<<< HEAD
 myDateRecord.html__DEL__YkLIxCoUedatEyArixagnRgiR7aGbV+zrVu3AZN0nrw=
 myWoRecord.html__DEL__5GxycM+EoG3zP2EXTL3h6ZSqKcZ7kNAV+npEF6IEzKM=
 pageChar.html__DEL__a4Ey/3N1qSrbEcwEC3ex6pn5wYYe0dT+MWNqSjtPrHc=
@@ -645,3 +661,13 @@ author-signature.xml__DEL__ILTijt1nVH0bSyZqo5wPbEDK6agTumOHVT7f4Ikwei8=
 signIn.html__DEL__3A37ChJgcpRyjqJlT2NN03G9CI7+Yl05uTRlVU9SzDo=
 js/mySignUpForm.js__DEL__GGiMapYG+mR7ZfdkaLdmW7ElI7l14JTJth9TALZ5JyI=
 signUpForm.html__DEL__s3PJ/Ux1Q+2HrTTrMnsi1ST/5bq0UfjkmKgDFSLe/u4=
+=======
+myrecord.html__DEL__6QR3mEgHoH6PeLAAVdXzAaP8D4lU7C/lQP+WF2+AI+Y=
+ranking.html__DEL__u4dsKMeeuYrsxW+S1F5v4JXdCYsb3c+OQ8LJv65useA=
+selection.html__DEL__cBwP2Zu0jvug5C3582LeT7UP6uCDaxWUrIRVmiBvyO4=
+signUpForm.html__DEL__CN7u++T/dIsTu6E90rA9Itt5Aa0D2bopNSI+zBW+fno=
+worksettingpage.html__DEL__4jKZE+237Pj01sooXUkSmKcnO4yCruQgPmL0hNfql34=
+author-signature.xml__DEL__eb4Du6Vwm35+NkBkPiFllAXcdpHDiUEYIoLazGvFdKA=
+blue.html__DEL__FdiQW2tJjrOdlMZsZg7tC2N7hiRVI3JM7Zkl7CCto5o=
+index.html__DEL__s7Dv6qL2WMEHp5ztXRulvNstE5z0tdrk6jDxOtvQByU=
+>>>>>>> parent of 4bda59c... Before changing saving project.

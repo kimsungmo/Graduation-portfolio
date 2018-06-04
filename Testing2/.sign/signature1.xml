@@ -4,15 +4,23 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>ILTijt1nVH0bSyZqo5wPbEDK6agTumOHVT7f4Ikwei8=</DigestValue>
 </Reference>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>hCvmkJKOJgiio5umygX6n+OvDBRcxugB096FvkkWXY8=</DigestValue>
+=======
+<DigestValue>eb4Du6Vwm35+NkBkPiFllAXcdpHDiUEYIoLazGvFdKA=</DigestValue>
+</Reference>
+<Reference URI="blue.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>FdiQW2tJjrOdlMZsZg7tC2N7hiRVI3JM7Zkl7CCto5o=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>K0Jze05ZvQKUC53l6HVNyRhl9qW6+GETle70g51bPrY=</DigestValue>
+<DigestValue>UHtGGqlzJNk0JZN0RF7EuMZLEVb4tRFW8/rKY37xn0c=</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,7 +32,11 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>TSpRtsinEHth2/lIXjFLsorU6R7wkWtfnUsVEv2HHu0=</DigestValue>
+=======
+<DigestValue>s7Dv6qL2WMEHp5ztXRulvNstE5z0tdrk6jDxOtvQByU=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="js%2FChart.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -40,6 +52,7 @@
 </Reference>
 <Reference URI="js%2FblueTooth.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>gd5rp2SzlZcTSy2Wv5COgPEveEzvdl9aaWxlbQLHqA4=</DigestValue>
 </Reference>
 <Reference URI="js%2FloginAndWorkout.js">
@@ -53,6 +66,9 @@
 <Reference URI="js%2FmyDateRecord.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>9tUsUJiproqiydF4aFax0IHFsnX4RasoJTbNoIL4UQQ=</DigestValue>
+=======
+<DigestValue>8EKLofILn1UcC4s+N5v7UDnj9qXgnjzCZm3AstcE7nE=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="js%2FmySignInForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -60,11 +76,15 @@
 </Reference>
 <Reference URI="js%2FmySignUpForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>GGiMapYG+mR7ZfdkaLdmW7ElI7l14JTJth9TALZ5JyI=</DigestValue>
 </Reference>
 <Reference URI="js%2FmyWoRecrod.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>vR0m0qtHnwHS57DL8mV0/G4mplQk21RbX2ErGbQxHwY=</DigestValue>
+=======
+<DigestValue>YGKPz4hgobutCVLRl9wuop5ND7baSUqainIWWFJSdbg=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="js%2FsettingToBlue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2568,6 +2588,7 @@
 </Reference>
 <Reference URI="selection.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>Yw65sp2s+4DLM4hm/fqTiExqTOsVw58Xg4I8L+dz4Vw=</DigestValue>
 </Reference>
 <Reference URI="signIn.html">
@@ -2577,18 +2598,29 @@
 <Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>s3PJ/Ux1Q+2HrTTrMnsi1ST/5bq0UfjkmKgDFSLe/u4=</DigestValue>
+=======
+<DigestValue>cBwP2Zu0jvug5C3582LeT7UP6uCDaxWUrIRVmiBvyO4=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
-<Reference URI="signup%2FsignUpForm.html">
+<Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>s6pQPKUfSV3xR7Gw/xtXyofFuWxon9NI8LFtBHAxO2g=</DigestValue>
 </Reference>
 <Reference URI="woRank.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>FOy64Cl3EUChuT1cdP5sNX50nDPJf/rX4WP74cDajgU=</DigestValue>
+=======
+<DigestValue>CN7u++T/dIsTu6E90rA9Itt5Aa0D2bopNSI+zBW+fno=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="workSettingPage.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<<<<<<< HEAD
 <DigestValue>H0BRZv5sG++KQqHGjeKubGoPJ346vd2e8mzcDSqw2N0=</DigestValue>
+=======
+<DigestValue>4jKZE+237Pj01sooXUkSmKcnO4yCruQgPmL0hNfql34=</DigestValue>
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -2599,11 +2631,19 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
+<<<<<<< HEAD
 J1vIE7myCbyut5aVKLdh/81ornsOn6MR8Lm3+CLN2srw6zVATL5YgjIx6I3PieML6V3C2gnLWxPt
 fA2tQsI1weqheu3EM62dxYLciodUfD+yiR6QwGd/5a+u2Y9184UNUgsfATmIEY28ERvlvdw4Nr2c
 58L/iW5iwtqwDLoqB0HgnbNh2TpzMUq4gEvryXcepielL0939Ei6lKmgvkuy/oCmM/ZR4vJI+d2q
 T0Rr5b/jve/wQWbRc9khvskx5O46hiF7fqllGJcl3MBzwVuMfF94uV+snPeFqJMp11HQArd3+JQa
 dQDekKBS5A9Fiyd0Nb65vFpq4kRhf33OAn0mlg==
+=======
+KhOoprVihv19BC9C6AkISbSF2/PU+8yGe13/iYmGfBkdIeny72GHkKIDsIQJnxjp+xbJR5Ba76x0
+H39wgzuU8Xy5uLUhVeTMcJMy6DnjAwvs2JFUMfGk6QxTLp5V3sVzjYRy0xB+dX+Xp8CogPIX/lQo
+iHqg/Z6XkRvk72W28GBT70OT28ORY/OXfE+NSvJAj04kuUvOtm7cXrAXZP3/jIM1huQ6DtEOiAxz
+o8s3tQ1S0LjLEH5KCY7QcAlbECQHhtZ8NzKOQne0y+6izqd+h2FXqYpPYS/1SwXCSH4O/X0zl+Ls
+MSehFcCtUvgf84rbTBLn/k2v2pKDY7DWISy2yg==
+>>>>>>> parent of 4bda59c... Before changing saving project.
 </SignatureValue>
 <KeyInfo>
 <X509Data>
