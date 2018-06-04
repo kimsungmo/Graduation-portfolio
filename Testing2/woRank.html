@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<!-- <meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
+	<title>Monthly Ranking</title>
+</head>
+
+<body>
+	<div data-role="header" data-position="fixed"><h1>랭킹조회</h1></div>
+	<!-- <br><br> -->
+	<div class="ui-content">
+		<form>
+			<select id="yearselect">
+				<option value="">Year</option>
+				<option value="2018">2018</option>
+				<option value="2017">2017</option>
+				<option value="2016">2016</option>
+			</select>
+			<select id="monthselect">
+				<option value="">Month</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<select id="workoutselect" onchange="$.showTable()">
+				<option value="">Workout</option>
+				<option value="1">덤벨컬</option>
+				<option value="2">팔굽혀펴기</option>
+				<option value="3">레터럴레이즈</option>
+			</select>	
+		</form>
+		<div id="tbl"></div>
+	</div>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="/js/woRank.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
+	<title>Insert title here</title>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/js/main.js"></script> -->
+</head>
+<body>
+<br><br>
+<div data-role="header" data-position="fixed"><h1>운동별 내 기록</h1></div>
+	<form>
+		<select name="workoutslct" onchange="$.showUser(this.value)">
+			<option value="">Select a workout:</option>
+			<option value="1">덤벨컬</option>
+			<option value="2">팔굽혀펴기</option>
+			<option value="3">레터럴레이즈</option>
+		</select>
+	</form>
+	<br>
+	<div id="txtHint"></div>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script src="/lib/tau/mobile/js/tau.js"></script> -->
+	<script src="/js/myWoRecord.js"></script> 
+</body>
+</html>

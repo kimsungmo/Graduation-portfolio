@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
+</head>
+<body>
+	<!-- Start of first page: #one -->
+	<div class="ui-page" id="one">
+		<div class="ui-header"><h1>로그인</h1></div><!-- /header -->	   
+		<div class="ui-content">
+	        <iframe name="ifrm" frameborder="0" width="0" height="0"></iframe>
+			<!-- <form name="singIn" method="post" action="http://115.68.232.116/member/signIn.php" onsubmit="return incheckSubmit()">-->
+			<form name="singIn" method="post" onsubmit="return incheckSubmit()"> 
+	            <div class="line">
+	                <p>아이디</p>
+	                <div class="inputArea">
+	                    <input type="text" name="memberId" class="memberId" />
+	                </div>
+	            </div>
+	            <div class="line">
+	                <p>비밀번호</p>
+	                <div class="inputArea">
+	                    <input type="password" name="memberPw" class="memberPw" />
+	                </div>
+	            </div>
+	            <hr>
+	            <div class="line">
+	                <!-- <input type="submit" value="로그인" id="sbmt" /> -->
+	                <input type="button" value="로그인" id="sbmt"></input>
+	            </div>
+	        </form>
+		</div><!-- /content -->
+	</div><!-- /page one -->
+	<script src="/lib/jquery.js"></script>
+	<script src="/lib/tau/mobile/js/tau.js"></script>
+	<script src="/js/back.js"></script>
+	<script src="/js/loginAndWorkout.js"></script>
+	<script src="/js/mySignInForm.js"></script>
+	<script src="/js/slct.js"></script>
+	<script src="/js/mainToSignInSignUp.js"></script>
+	<!-- <script src="/js/settingToServer"></script> -->
+	<script src="/js/bluetooth.js"></script>
+	
+</body>
+</html>

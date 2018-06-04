@@ -3,17 +3,47 @@
 
 <head>
 	<meta name="viewport" content="width=device-width,user-scalable=no"/>
-	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<!-- <link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
 	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Multi Page</title>
 </head>
 
 <body>
 	<!-- Start of first page: #one -->
+	<div data-role="page" id="pageList">
+		<div data-role="header"><h1>메인화면</h1></div><!-- /header -->	   
+		<div data-role="content">
+			<a data-role="button" id="signIn">
+				<button>로그인하기</button>
+			</a>
+			<a data-role="button" id="signUp">
+				<button>회원가입</button>
+			</a>
+		</div><!-- /content -->
+	</div><!-- /page one -->
+
+	<script src="/lib/jquery.js"></script>
+	<script src="/js/back.js"></script>
+	<script src="/js/mainToSignInSignUp.js"></script>
+	<!--<script src="/lib/tau/mobile/js/tau.js"></script>
+	 <script src="/js/blue.js"></script> -->
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Multi Page</title>
+</head>
+
+<body>
 	<div class="ui-page" id="one">
-		<div class="ui-header"><h1>로그인</h1></div><!-- /header -->	   
+		<div class="ui-header"><h1>로그인</h1></div>
 		<div class="ui-content">
-	        <!-- <iframe name="ifrm" frameborder="0" width="0" height="0"></iframe> -->
-			<form name="singIn" method="post" action="http://115.68.232.116/member/signIn.php" onsubmit="return incheckSubmit()">
+			<form name="singIn" method="post" action="http://115.68.232.116/member/loginsuc.php" onsubmit="return incheckSubmit()">
 	            <div class="line">
 	                <p>아이디</p>
 	                <div class="inputArea">
@@ -31,25 +61,19 @@
 	                <input type="submit" value="로그인" id="sbmt" />
 	            </div>
 	        </form>
-	        	<!-- <form>
-	        		<button formaction="signUpForm.html">회원가입</button>
-	        	</form> -->
-	        	<!-- <a href="signUpForm.html" data-role="button" data-inline="true">
-						<button>회원가입</button>
-				</a>-->
 				<a data-role="button" id="signUp">
 					<button>회원가입</button>
 				</a>
-		</div><!-- /content -->
-	</div><!-- /page one -->
-	
+		</div>
+	</div>
 	<script src="/lib/jquery.js"></script>
 	<script src="/js/loginandworkout.js"></script>
 	<script src="/js/mySignInForm.js"></script>
 	<script src="/js/slct.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/js/back.js"></script>
 	<script src="/js/mainToSignUp.js"></script>
 	<script src="/lib/tau/mobile/js/tau.js"></script>
 	<script src="/js/bluetooth.js"></script>
 </body>
 </html>
+ -->
