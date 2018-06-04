@@ -5,7 +5,6 @@
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <<<<<<< HEAD
-<<<<<<< HEAD
 <DigestValue>ILTijt1nVH0bSyZqo5wPbEDK6agTumOHVT7f4Ikwei8=</DigestValue>
 </Reference>
 <Reference URI="blue.html">
@@ -13,13 +12,6 @@
 <DigestValue>hCvmkJKOJgiio5umygX6n+OvDBRcxugB096FvkkWXY8=</DigestValue>
 =======
 <DigestValue>eb4Du6Vwm35+NkBkPiFllAXcdpHDiUEYIoLazGvFdKA=</DigestValue>
-=======
-<DigestValue>w8cMbxFL5kzcjTgL/oZ5zg7IxdIQ0odpziympXWfIVA=</DigestValue>
-</Reference>
-<Reference URI="blue.html">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>R7eE4sUdayivafsZi3zFn+bGbwJ5qArlG6fxqO6feho=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -30,13 +22,10 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>UHtGGqlzJNk0JZN0RF7EuMZLEVb4tRFW8/rKY37xn0c=</DigestValue>
 </Reference>
-<<<<<<< HEAD
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>gMfny6PRkXoKD9D5inSIXrL0OsIItJzeMFDs1aoXbeo=</DigestValue>
 </Reference>
-=======
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1d0oEZHqPn+QzNzGIHwj9ODby6x9ggFs9uOsav6jPNs=</DigestValue>
@@ -44,30 +33,18 @@
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <<<<<<< HEAD
-<<<<<<< HEAD
 <DigestValue>TSpRtsinEHth2/lIXjFLsorU6R7wkWtfnUsVEv2HHu0=</DigestValue>
 =======
 <DigestValue>s7Dv6qL2WMEHp5ztXRulvNstE5z0tdrk6jDxOtvQByU=</DigestValue>
 >>>>>>> parent of 4bda59c... Before changing saving project.
-=======
-<DigestValue>pN4FqIOJyyvpYb990KhbnEpOMcWqF3E5SihL6UF6pqw=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="js%2FChart.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>CfcERD4Ov4+lKbWbYqXD6aFM9M51gN4GUEtDhkWABMo=</DigestValue>
-=======
-<DigestValue>UVk7plqkB2vi0AE5VZs+LxmzOAJXzta9/R51GdW8kHw=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="js%2Fback.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>FTEbC4Ze6mLmn+/A3Wagmm7wLLErPEuPtP1pM9d3LMQ=</DigestValue>
-=======
-<DigestValue>1psr0mGFr0wv6J9Hb3nI4yXeNinkL9KpDVaBcUaSYLI=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="js%2Fblue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -82,9 +59,9 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>NQwN05ZcJWTvlFCBwB7KoDnRZ4cVH1ING5j1kE5uKjk=</DigestValue>
 </Reference>
-<Reference URI="js%2FmainToSignUp.js">
+<Reference URI="js%2FmainToSignInSignUp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>FQoRJ9dj4/0HydijQCbuLOkG1L9CCd55ftC64oWk9F0=</DigestValue>
+<DigestValue>5mSWG7jqAb/qOpBzyaYgj0eHPoNtpqR/DXyy/5k0IkQ=</DigestValue>
 </Reference>
 <Reference URI="js%2FmyDateRecord.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -95,16 +72,12 @@
 </Reference>
 <Reference URI="js%2FmySignInForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>eZ4sJkKWPTUDaP4eh2RnnoFzT5T3JhYq5ItgIzN/lBQ=</DigestValue>
+<DigestValue>r0cxSwruq0YFw2+AR16h6n9uONhwMJU3TP7FshT/E+E=</DigestValue>
 </Reference>
 <Reference URI="js%2FmySignUpForm.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <<<<<<< HEAD
-<<<<<<< HEAD
 <DigestValue>GGiMapYG+mR7ZfdkaLdmW7ElI7l14JTJth9TALZ5JyI=</DigestValue>
-=======
-<DigestValue>AACewCjMoaKumgS01wlW1iu8L5uZKqU+NlYEkI/WU9Q=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="js%2FmyWoRecrod.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -115,23 +88,19 @@
 </Reference>
 <Reference URI="js%2FsettingToBlue.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>0167rkcZgVJXUc3XpF/22ijashP4IPyBkjl9sq6LePk=</DigestValue>
+<DigestValue>PV+TGFJzxqEPd5ZgRBMUcDrPltp6nf0GC4lg+h8sL00=</DigestValue>
 </Reference>
 <Reference URI="js%2Fslct.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>FcmNHwhF3TBdkEDEukSUAyAAoxl4C7C904d3W/LLM98=</DigestValue>
 </Reference>
 <Reference URI="js%2FwoRank.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>AsRQMRhqLIndtHVzBRuSGR+zEiSKRMznWEWw5RNB7GA=</DigestValue>
-=======
-<DigestValue>zFgn3eFgY0SeXlQYf0mKRT+8Zj9WuvmwozcrIY8LRow=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="lib%2Fjquery.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>uo8gOp675XcfSby+CAQHkkDHIl9L5qtCR2m/v7NevDU=</DigestValue>
+<DigestValue>z6aVFjdeJ+VlGcrnHyiBjg5SUVtw5wWmANHbRZmYM1o=</DigestValue>
 </Reference>
 <Reference URI="lib%2Fphantom.fix.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -1547,7 +1516,7 @@
 </Reference>
 <Reference URI="lib%2Ftau%2Fmobile%2Fjs%2Fcultures%2Fglobalize.cultures.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>N3wJ7GrRqqw8ROiY+zq6b+Lok8oKQzsc+4rw/enwSQ4=</DigestValue>
+<DigestValue>fJm7GC3EBUfTgG7R3c+/8y4l/BQeUtNFxkZ7AcA3LyQ=</DigestValue>
 </Reference>
 <Reference URI="lib%2Ftau%2Fmobile%2Fjs%2Fjquery.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2611,7 +2580,6 @@
 </Reference>
 <Reference URI="myWoRecord.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>5GxycM+EoG3zP2EXTL3h6ZSqKcZ7kNAV+npEF6IEzKM=</DigestValue>
 </Reference>
 <Reference URI="pageChar.html">
@@ -2622,32 +2590,20 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <<<<<<< HEAD
 <DigestValue>Yw65sp2s+4DLM4hm/fqTiExqTOsVw58Xg4I8L+dz4Vw=</DigestValue>
-=======
-<DigestValue>6QR3mEgHoH6PeLAAVdXzAaP8D4lU7C/lQP+WF2+AI+Y=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
-<Reference URI="ranking.html">
+<Reference URI="signIn.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>3A37ChJgcpRyjqJlT2NN03G9CI7+Yl05uTRlVU9SzDo=</DigestValue>
-=======
-<DigestValue>u4dsKMeeuYrsxW+S1F5v4JXdCYsb3c+OQ8LJv65useA=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
-<Reference URI="selection.html">
+<Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <DigestValue>s3PJ/Ux1Q+2HrTTrMnsi1ST/5bq0UfjkmKgDFSLe/u4=</DigestValue>
 =======
 <DigestValue>cBwP2Zu0jvug5C3582LeT7UP6uCDaxWUrIRVmiBvyO4=</DigestValue>
 >>>>>>> parent of 4bda59c... Before changing saving project.
-=======
-<DigestValue>cyjYNoa0m63NH1KcqTCfLt8WKP+ojB07gskZ+WIvNjs=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <<<<<<< HEAD
 <DigestValue>s6pQPKUfSV3xR7Gw/xtXyofFuWxon9NI8LFtBHAxO2g=</DigestValue>
 </Reference>
@@ -2657,21 +2613,14 @@
 =======
 <DigestValue>CN7u++T/dIsTu6E90rA9Itt5Aa0D2bopNSI+zBW+fno=</DigestValue>
 >>>>>>> parent of 4bda59c... Before changing saving project.
-=======
-<DigestValue>Pn19tbramdt536wpNAEAqpJXoZol/BRq69sjbJSiP+k=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="workSettingPage.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<<<<<<< HEAD
 <<<<<<< HEAD
 <DigestValue>H0BRZv5sG++KQqHGjeKubGoPJ346vd2e8mzcDSqw2N0=</DigestValue>
 =======
 <DigestValue>4jKZE+237Pj01sooXUkSmKcnO4yCruQgPmL0hNfql34=</DigestValue>
 >>>>>>> parent of 4bda59c... Before changing saving project.
-=======
-<DigestValue>nX69gnuOTutCm6BAN1u1/T+114GlGdCPkXoZs3CDpNk=</DigestValue>
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -2682,7 +2631,6 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-<<<<<<< HEAD
 <<<<<<< HEAD
 J1vIE7myCbyut5aVKLdh/81ornsOn6MR8Lm3+CLN2srw6zVATL5YgjIx6I3PieML6V3C2gnLWxPt
 fA2tQsI1weqheu3EM62dxYLciodUfD+yiR6QwGd/5a+u2Y9184UNUgsfATmIEY28ERvlvdw4Nr2c
@@ -2696,13 +2644,6 @@ iHqg/Z6XkRvk72W28GBT70OT28ORY/OXfE+NSvJAj04kuUvOtm7cXrAXZP3/jIM1huQ6DtEOiAxz
 o8s3tQ1S0LjLEH5KCY7QcAlbECQHhtZ8NzKOQne0y+6izqd+h2FXqYpPYS/1SwXCSH4O/X0zl+Ls
 MSehFcCtUvgf84rbTBLn/k2v2pKDY7DWISy2yg==
 >>>>>>> parent of 4bda59c... Before changing saving project.
-=======
-P33MjasEPqRfsL9QuXDSOJONimUt1clm/MnnCoiVxdyY4zhad4ZBH3n6bol7mkc7llvqPRSvhEnW
-rTdAunsowa+B1cwjJ9jzNEUuAuO2OU2JZbAD50Smnd/ofQpMgX0fecvv+GYUWvpbNpuXWGsiwokC
-ZdMTk0Nxi3QplNqkFLs9v5g+VZkLlNJM90R55eaTOZEtJrrrjVYC9nBnEKUfpeCeJtBSzixzQHMJ
-B5HvEn4zFGvkOlyVQ+Fyip94Kgn3U/S/2tHO8Qx13S+PGUnDpJiPkhVIl0Ho+hS4JQZK9OULrMet
-Vq8b1OXuNZ/nbj7AhogAs8D4a+kxt2WoLPLbtg==
->>>>>>> parent of 7f489c2... Retrieving the datas from the DB of cloud server. Myrecords for showing workout record is almost done, myrecords by date, ranking system is not yet
 </SignatureValue>
 <KeyInfo>
 <X509Data>
