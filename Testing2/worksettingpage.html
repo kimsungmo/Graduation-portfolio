@@ -6,17 +6,15 @@
 </head>
 <body>
 	<div data-role="page" id="workset">
-		<div data-role="header" data-position="fixed"><h1>운동설정</h1></div>
-		<br>
-		<form name="woSelection" method="post" action="http://115.68.232.116/include/setting.php">
-			<div class="line" id="workout">
-				<p>운동종목</p>
-				<div class="inputArea">
-					<input type="radio" name="workout" value="1"/>덤벨 컬
-					<input type="radio" name="workout" value="2"/>푸시 업
-					<input type="radio" name="workout" value="3"/>레터럴레이즈
-				</div>
-			</div>
+	<div data-role="header" data-position="fixed"><h1>운동설정</h1></div>
+	<br>
+	<div data-role="content">
+		<div id="workout">운동 종목</div>
+			<input type="radio" name="workout" value="덤벨 컬"/>덤벨 컬
+			<input type="radio" name="workout" value="푸시업"/>푸시 업
+			<input type="radio" name="workout" value="스쾃"/>스쾃
+			<input type="radio" name="workout" value="레터럴 레이즈"/>레터럴 레이즈
+			<br>
 			<table>
 			   <tr><th>세트</th><th>반복</th><th>중량</th></tr>
 			   <tr>
@@ -28,8 +26,8 @@
 			   <td></td>
 			   <td> 
 			   <a href="blue.html" data-role="button">
-			   	<button onclick="confirm()" id="toServer">아령찾기</button>
-			   </a>
+			   		<button onclick="confirm()">아령찾기</button>
+			   	</a>
 			   		<!-- table for button on the middle -->
 			   		<!-- <a data-role="button" data-inline="true">
 						<button onclick="confirm()">아령찾기</button> 
@@ -39,23 +37,13 @@
 				<td></td>
 			   </tr>
 			</table>
-			<div class="line" id="restTime">
-				<p>세트 종료 후 쉬는 시간</p>
-				<div class="inputArea">
-					<select id="rest_time">
-						<option value="10">10</option>
-						<option value="15">15</option>
-						<option value="20">20</option>
-						<option value="25">25</option>
-					</select>
-				</div>
-			</div>
 			<!-- <a class="printing" data-role="button" data-inline="true">
 				<button class="printing">선택 항목 출력</button>
 			</a> -->
 			<button type="button" id="btn" onclick="confirm()">내가 선택한 운동 확인</button>
             <div id="prnt"></div>
-		</form>
+		</div>
 	</div>
+		
 </body>
 </html>
