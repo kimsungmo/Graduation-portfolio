@@ -4,11 +4,11 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>034S4emc9fMgpV2pK1fitAofn4fQTwJgM201bUAxH7E=</DigestValue>
+<DigestValue>Gx2CFgHgSw9y1mXxYAvI7dGqo0OZQujvt2iu9Lnr16c=</DigestValue>
 </Reference>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>R7eE4sUdayivafsZi3zFn+bGbwJ5qArlG6fxqO6feho=</DigestValue>
+<DigestValue>GLHyInVaoBQ7NhAY5SFU3oQHCJNjN6ItA/eByl2DQGc=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>aiFMyungowN0dslGnEOhIAoNa8XXUNt/Latar2hw+98=</DigestValue>
+<DigestValue>EbNKr6N2ihGN4QepZb/dpu63DcDZYjvw/htmCJuW+no=</DigestValue>
 </Reference>
 <Reference URI="js%2FChart.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -32,11 +32,15 @@
 </Reference>
 <Reference URI="js%2Fback.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>hSKC+6Od2CbiEBkZFdFyRvnbIjpCJkDxzhcSOPmSSeA=</DigestValue>
+<DigestValue>PvmVkmQ9uplsDyTgnOJtbyJBJqIzRQ4UkL60Im0ZB4Q=</DigestValue>
 </Reference>
 <Reference URI="js%2Fbluetooth.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>wtRIdAPyn2v2zT2cjplvjMDdzElCeKHsyreJJEq3oas=</DigestValue>
+<DigestValue>GF2aHqqhHUiVUmWHIrAu2IZunp3fBSRasqC7RBIqxZQ=</DigestValue>
+</Reference>
+<Reference URI="js%2FgoHome.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>xVNSzo6okYuVwtVpynMGLqbDX8OTWuLm18izGDSnJl0=</DigestValue>
 </Reference>
 <Reference URI="js%2FloginAndWorkout.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2564,7 +2568,7 @@
 </Reference>
 <Reference URI="selection.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>KDr0b/tRDcSs15HQo8jVxoRGl3crutvsW4WZH42Hp1c=</DigestValue>
+<DigestValue>9liVXboT7hILgW2uFlG2YyulsrAq/lPxz1lZWU8m7zg=</DigestValue>
 </Reference>
 <Reference URI="signIn.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2572,7 +2576,7 @@
 </Reference>
 <Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>USrslFGNuMrfOaWazRjhBZeW2MTSCz3JBdhhu9fc6L0=</DigestValue>
+<DigestValue>4Dd2aQ2psvYg8yrLW9gA2QLz2OMGVob+mAJwbLhjRyY=</DigestValue>
 </Reference>
 <Reference URI="woRank.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2591,11 +2595,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-O/iXSpLRUYYzt2JKucDrgrrIPllkrDEkuymywtj5Ka7wT8Nb90qr1KK4T4k0Ik4+nC2EMGKJM1AU
-aojt5X2vEzPUykir3aUXjWD8k18+/gKr2OTTZGTtLlZ5RpB0I1hrLG0Uv6zt/0johVUReyxRnDtn
-jz6f83yIPcwK0WN4nPEsDfP/lIcGxTUbfc4CE3yBOy36KjuReB0X+nRA/UfUQjJ2QgCBVayFbURY
-XZQvA6Ip/9aNERN58GoZ0rmwqBmhEgbaTZAAaXhoQMSL+SlPZPoI6F2IJJCHNyr7Jj3K+DbnUImX
-//T1iisaJLda8cTi3Jc+1QI6XvOEbdOq8xAr1g==
+JPNm5JeSa4CjGMuQqxOt5nTJ/EtypFXWP2ubp3ou0CE6Gj94Itdv1qC/cXQxI3LZZT0ksiQSTSQq
+uZLaH+erxt5TjbJd75vMuYVihjakvqzt4VXaL/4yhzf5Nj7LI0fVWBoBqZqfT1r2LZCiN16x333F
+gDKoxVbykBEtZcigWmmY0jDyUn98URAL6V5D4K1hDvg0xIWtxQYa5ZgGB60vBbv0PVR+t/WIXN/6
+i+AY1mxLTnLY1KwmdxI3ImIF/SVNvpsrmoU+vMUF6aWl1NBsrPOajk8TfaaZ+5uK3RM0CtnN97NQ
+VVINSVwkH8dBdznacCyZK7nWYbetjBkUopcXGQ==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

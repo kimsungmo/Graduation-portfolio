@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="blue.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>R7eE4sUdayivafsZi3zFn+bGbwJ5qArlG6fxqO6feho=</DigestValue>
+<DigestValue>GLHyInVaoBQ7NhAY5SFU3oQHCJNjN6ItA/eByl2DQGc=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -20,7 +20,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>aiFMyungowN0dslGnEOhIAoNa8XXUNt/Latar2hw+98=</DigestValue>
+<DigestValue>EbNKr6N2ihGN4QepZb/dpu63DcDZYjvw/htmCJuW+no=</DigestValue>
 </Reference>
 <Reference URI="js%2FChart.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -28,11 +28,15 @@
 </Reference>
 <Reference URI="js%2Fback.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>hSKC+6Od2CbiEBkZFdFyRvnbIjpCJkDxzhcSOPmSSeA=</DigestValue>
+<DigestValue>PvmVkmQ9uplsDyTgnOJtbyJBJqIzRQ4UkL60Im0ZB4Q=</DigestValue>
 </Reference>
 <Reference URI="js%2Fbluetooth.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>wtRIdAPyn2v2zT2cjplvjMDdzElCeKHsyreJJEq3oas=</DigestValue>
+<DigestValue>GF2aHqqhHUiVUmWHIrAu2IZunp3fBSRasqC7RBIqxZQ=</DigestValue>
+</Reference>
+<Reference URI="js%2FgoHome.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>xVNSzo6okYuVwtVpynMGLqbDX8OTWuLm18izGDSnJl0=</DigestValue>
 </Reference>
 <Reference URI="js%2FloginAndWorkout.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2560,7 +2564,7 @@
 </Reference>
 <Reference URI="selection.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>KDr0b/tRDcSs15HQo8jVxoRGl3crutvsW4WZH42Hp1c=</DigestValue>
+<DigestValue>9liVXboT7hILgW2uFlG2YyulsrAq/lPxz1lZWU8m7zg=</DigestValue>
 </Reference>
 <Reference URI="signIn.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2568,7 +2572,7 @@
 </Reference>
 <Reference URI="signUpForm.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>USrslFGNuMrfOaWazRjhBZeW2MTSCz3JBdhhu9fc6L0=</DigestValue>
+<DigestValue>4Dd2aQ2psvYg8yrLW9gA2QLz2OMGVob+mAJwbLhjRyY=</DigestValue>
 </Reference>
 <Reference URI="woRank.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -2587,11 +2591,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-g/ccKhQiZXrTR3dN1WfvrF6B1Y3vcat5b/J3w9jyjk3OnXCmehcNxUv4lNgLtonculpH/ZOiWIxR
-UAAhaydWR6O3zt9UnM29CBUf/JK8YfSGt5r6PB00Ijkprf951mw1QtxiAnnN5aozXJKl3QVYJJCc
-k4uJI8kXTidtuI3MQ6DoCdvQa5PzOgF2YvhwxCHCa53v3POFU5iie/bOnAvQECz0zPQBGg7p+flZ
-g60qOa2aQ7oMKbC/ys/30vPIGRLl4cU1O7TAFJpKJ/zXydJnwIdgUHZpRZXH4OQW68S2hb37pJ+F
-gZZ04jH+0IUUdEv38C0zmLJhIW8wGm2A6VnSlw==
+AAOTdpjJFX2xKlvvIp37GQko2DXwi2GSZd/cJnu6a+3kFkgxtaoNGmdwSCvqQR/DabpnWYDUPBPq
+Ayh3FLCDx5Z9HWcRpB6+b+ezPcrJMYOeAsdviOpxajAtlE+B9LqAQN+3MeyXzUPaVg/D1kOQsPVB
+K0WllciGUrygIufbXxbUC/ckUw+KkqwTs5Yn4neY0cS+7hMk/YZZHuaVVnh1bk0XFy2rr7hadNLc
+Ent86IMg1PX4No6OcFU/cOBzzt7mHIaKnYsk2PGxII4zKJKn+SMs/AP36kFvrGXRMBitPk3CJMBE
+Cbirv+idjggWg5TxwCMNx023exgQcTZ1rEwWRg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

@@ -77,6 +77,7 @@ var onSocketConnected = function(socket) {
     console.log ("소켓이 연결됨");
     socket.onmessage = function () {
        document.getElementById("divReceiveData").innerHTML = socket.readData();
+       document.getElementById("divReceiveData2").innerHTML = socket.readData();
        //reps = getElementById("divReceiveData");
        //count = parseInt(socket.readData());
     	  //String.fromCharCode.apply(String, socket.readData()) + "<br/>" + 
@@ -165,6 +166,7 @@ var init = function () { //2번
     	adapter.getDevice(document.getElementById("txtDeviceAddress").value,
     		onDeviceReady, 
     		function(e) { /*alert(e.message);*/alert('연결실패'); });
+    	tau.changePage("#pageChar");
     });
     
     var backEvent = function(e) {
