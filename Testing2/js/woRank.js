@@ -5,6 +5,7 @@ $.showTable = function(){
 	year = $("#yearselect").val();
 	month = $("#monthselect").val();
 	workout = $("#workoutselect").val();
+	alert(year,month,workout);
 	$.ajax({
 		type:'post',
 		dataType:'json',
@@ -20,7 +21,7 @@ $.showTable = function(){
 				return;
 			}
 			var tbl=""
-			tbl+='<table border=1><tr><th>Rank</th><th>Nickname</th><th>Sets</th><th>Reps</th><th>Weight</th><th>Point</th><th>Date</th></tr>'
+			tbl+='<table border=1><tr><th>Rank</th><th>Nickname</th><th>Sets</th><th>Reps</th><th>Weight</th><th>Point</th><th>Date</th></tr>';
 				while(result[i]){		
 					tbl+='<tr><td>'+result[i][0]+'</td><td>'+result[i][1]+'</td><td>'+result[i][3]+'</td><td>'+result[i][4]+'</td><td>'
 					+result[i][5]+'</td><td>'+result[i][6]+'</td><td>'+result[i][7];

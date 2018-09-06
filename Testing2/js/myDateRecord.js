@@ -33,7 +33,7 @@ $(function(){
 					'rgb(153, 102, 255)', //purple
 					'rgb(201, 203, 207)' //grey
 				];
-				while(result[i]){
+				while(result[i]){//서버에서 가져온 data를 알맞게 배열에 넣음
 					days.push(result[i][7]);
 					workouts.push(result[i][0]);
 					done.push(parseInt(result[i][1]) * parseInt(result[i][2]) * parseInt(result[i][3]));
@@ -41,31 +41,30 @@ $(function(){
 					i+=1;
 				}
 				$.each(days,function(i,el){
-					if($.inArray(el,uniquedays)===-1)uniquedays.push(el);
+					if($.inArray(el,uniquedays)===-1)uniquedays.push(el);//배열 내에 el과 일치하는 값을 찾지 못하면 uniquedays에 날짜 삽입
 				});
 				var thirtyone=[];
 				for(i=0;i<31;i++){
 					thirtyone.push(i+1);
 				}
-				var barChartData = {
+				var barChartData = {//Schema for bar chart.
 					labels:thirtyone,
 					datasets:[
 					]
 				};
-			var ctx = document.getElementById('canvas').getContext('2d');
+			var ctx = document.getElementById('canvas').getContext('2d');//chart 그리기 위한 canvas
 			window.myBar = new Chart(ctx, {
 				type: 'bar',
-				data: barChartData,
+				data: barChartData,//위에서 설정한 object
 				options: {
 					title: {
 						display: true,
 						text: '월별 운동 기록'
 					},
-					tooltips: {
+					tooltips: {//Print info during hover
 						mode: 'index',
 						intersect: false
 					},
-
 					responsive: true,
 					scales: {
 						xAxes: [{
@@ -82,7 +81,7 @@ $(function(){
 			var w;
 			var count=0;
 			var workset=[];
-			var workval=[];
+			//var workval=[];
 			var k;
 			while(w=workouts[i]){//운동 하나 선택
 				j=0;
@@ -91,10 +90,10 @@ $(function(){
 					if(w==result[j][0]){//운동 같음
 						count=0;
 						for(k=1;k<=31;k++){
-							if(k==result[j][7]){
+							if(k==result[j][7]){//날짜가 같다면
 								workset.push(result[j][1]);
 							}else{
-								workset.push(0);
+								workset.push(0);//해당 사항 없으면 0 삽입
 							}
 						}
 						if(count==0){
@@ -106,16 +105,16 @@ $(function(){
 					j+=1;
 				}
 				var newDataset = {
-						label: [workouts[i]],//운동 각각 하나
-						backgroundColor : color[i],//색깔 변하게
-						data: workset //날짜마다 수행한 운동 값, 운동 안했으면 0
-					};
-					barChartData.datasets.push(newDataset);
-					window.myBar.update();
+					label: [workouts[i]],//운동 각각 하나
+					backgroundColor : color[i],//색깔 변하게
+					data: workset //날짜마다 수행한 운동 값, 운동 안했으면 0
+				};
+				barChartData.datasets.push(newDataset);
+				window.myBar.update();//chart 갱신
 				i+=1;
 			}
 		},
-			error : function(xhr,status,erre){
+			error : function(xhr,status,error){
 				alert(error);
 			}
 		})

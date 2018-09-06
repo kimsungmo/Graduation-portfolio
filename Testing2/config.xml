@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Testing2" version="1.0.0" viewmodes="maximized">
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Testing2" version="1.0.0" viewmodes="maximized">
     <access origin="*" subdomains="true"></access>
     <tizen:application id="V0XVo7aXbw.Testing2" package="V0XVo7aXbw" required_version="2.4"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
-    <icon src="icon.png"/>
+    <icon src="dumbbell.png"/>
     <name>Testing2</name>
     <tizen:privilege name="http://tizen.org/privilege/bluetooth"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>

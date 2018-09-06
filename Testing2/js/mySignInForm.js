@@ -1,6 +1,6 @@
 var incheckSubmit=function (){
-    var memberId = $('.memberId');
-    var memberPw = $('.memberPw');
+    var memberId = $('#memberId');
+    var memberPw = $('#memberPw');
 
     if(memberId.val() == ''){
         alert('아이디를 입력해 주세요.');

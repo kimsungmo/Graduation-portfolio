@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
-	<title>Tizen Web IDE - Template - Tizen - Tizen Web UI Framework - Single-Page</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<title>Blue And Char</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
-
 <body>
-    <div data-role="page" id="pageList">
-        <div data-role="header" data-position="fixed">
-            <h1>블루투스검색</h1>
-        </div><!-- /header -->
-        <div data-role="content">
-            <div data-role="button" id="btnCreate">블루투스 연결</div>
+    <div class="container">
+        <!-- <div data-role="content"> -->
+            <!-- <div data-role="button" id="btnCreate">블루투스 연결</div>
             <div id="divAdapter"></div>
-            <div data-role="button" id="btnDiscovery">주변기기찾기</div>
-            <ul data-role="listview" id="listDevice" data-fastscroll="true">
-            </ul>
-            <div data-role="header" data-position="fixed">
-            <h1>블루투스데이터전송</h1>
-        	</div><!-- /header -->
-        	<label>선택된디바이스</label>
-            <input type="text" id="txtDeviceName">
-            <input type="text" id="txtDeviceAddress">
+            <div data-role="button" id="btnDiscovery">주변기기찾기</div>-->
+            <button id="btnDiscovery">주변기기찾기</button>
+            <p>아령을 찾으면 클릭해주세요</p>
+            <ul data-role="listview" id="listDevice"></ul>
+        
+        <!-- <h1>블루투스데이터전송</h1>
+
+            <label>선택된디바이스</label>
+            <input type="text" id="txtDeviceName" hidden>
+            <input type="text" id="txtDeviceAddress" hidden>
             <div data-role="button" id="btnDevice">디바이스연결</div>
             <div id="divDeviceInfo"></div>
-            <hr/>
-            <input type="text" id="txtSendData">
-            <div data-role="button" id="btnSendData">데이터보내기</div>
-            <div id="divReceiveData"></div> <!-- 여기에 아두이노에서 받아온 count 값이 출력됨. -->
-        </div><!-- /content -->
-    </div><!-- /page -->
-    
-    <div data-role="page" id="pageChar">
-        <div data-role="header" data-position="fixed">
-            <h1>캐릭터 출력</h1>
-        </div>
-        <div data-role="content">
+ -->
+        <h1>캐릭터 출력</h1>
+        
             <label>데이터 출력</label>
-            <div id="divReceiveData2"></div>
-        </div>
+            <table class="table table-sm">
+            	<tr>
+            		<td>workout</td><td>sets</td><td>reps</td><td>weights</td><td>rest</td>
+            	</tr>
+            	<tr>
+            		<td><div id="name"></div></td>
+            		<td><div id="cur_sets"></div><div id="sets"></div></td>
+            		<td><div id="cur_reps"></div><div id="reps"></div></td>
+            		<td><div id="weights"></div></td>
+            		<td><div id="cur_rest_time"></div><div id="rest_time"></div></td>
+            	</tr>
+            </table>
+            
+            <div id="forcharactor">
+	            <div id="canvasDiv"></div>
+	        </div>
+		<!-- <div id="divReceiveData"></div>
+		</div>   -->
     </div>
     
-	<script src="./lib/jquery.js"></script>
-	<script src="./lib/tau/mobile/js/tau.js"></script>
-	<script src="../js/bluetooth.js"></script>
-     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js" data-build-remove="false"></script>
+	<script src="./js/bluetooth.js"></script>
+	<script src="/js/character.js"></script>
+	
 </body>
 </html>

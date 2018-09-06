@@ -1,23 +1,15 @@
-var workout;
-var sets;
-var reps;
-var weight;
+var workout="미선택";
+var sets="미선택";
+var reps="미선택";
+var weight="미선택";
+var rest_time=10;
 
 function confirm(){
-	workout = $("input[name=workout]:checked").val();
-	sets = document.getElementById("sets").value;
-	reps = document.getElementById("reps").value;
-	weight = document.getElementById("weight").value;
-	document.getElementById("prnt").innerHTML = 
-	workout + "<br/>" +
-	"세트: "+sets+"반복: "+reps+"무게: "+weight;
-}
-
-function show(){
-	/*
-	닉네임을 바탕으로 개인 정보와 운동 설정, 실제 수행한 횟수 DB에 저장해야 함.
-	 */
-	document.getElementById("prnt").innerHTML = 
-		workout + "<br/>" +
-		"나의 목표 : "+" 세트: "+sets+" 반복: "+reps+" 무게: "+weight;
+	//workout = $("input[name=workout]:checked").val();
+	workout = $("input[name=workout]:checked").data("wo");
+	sets = $("#sets").val();
+	reps = $("#reps").val();
+	weight = $("#weights").val();
+	rest_time=$("#rest_time option:selected").val();
+	document.getElementById("prnt").innerHTML=workout+": "+"세트: "+sets+"반복: "+reps+"무게: "+weight+"쉬는 시간: "+rest_time+"초";
 }

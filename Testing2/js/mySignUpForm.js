@@ -5,11 +5,11 @@ $(function(){
     var memberPw = $('#memberPw');
     var memberPw2 = $('#memberPw2');
     var memberPw2Comment = $('.memberPw2Comment');
-    var memberNickName = $('.memberNickName');
+    var memberNickName = $('#memberNickName');
     var memberNickNameComment = $('.memberNickNameComment');
-    var memberEmailAddress = $('.memberEmailAddress');
+    var memberEmailAddress = $('#memberEmailAddress');
     var memberEmailAddressComment = $('.memberEmailAddressComment');
-    var memberBirthDay = $('.memberBirthDay');
+    var memberBirthDay = $('#memberBirthDay');
     var memberBirthDayComment = $('.memberBirthDayComment');
     var idCheck = $('#idCheck');
     var pwCheck2 = $('#pwCheck2');
@@ -66,9 +66,9 @@ function checkSubmit(){
     var idCheck = $('#idCheck');
     var pwCheck2 = $('#pwCheck2');
     var eMailCheck = $('.eMailCheck');
-    var memberBirthDay = $('.memberBirthDay');
-    var memberNickName = $('.memberNickName');
-    var memberName = $('.memberName');
+    var memberBirthDay = $('#memberBirthDay');
+    var memberNickName = $('#memberNickName');
+    var memberName = $('#memberName');
 
     if(idCheck.val() == '1'){
         res = true;

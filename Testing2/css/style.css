@@ -1,3 +1,11 @@
+@font-face{
+	font-family:HANNA;
+	src:url('../font/BMHANNA_11yrs_ttf.ttf');
+}
+@font-face{
+	font-family:JUA;
+	src:url('../font/BMJUA_ttf.ttf');
+}
 .popup-content-padding {
 	padding: 18px 24px;
 }
@@ -24,4 +32,40 @@ div #selects{
 }
 .button{
 	margin:auto;
+}
+.card-header{
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	
+}
+#mainpageList{
+	text-align:center;
+	margin:30px auto;
+}
+h1{
+	background-color:grey;
+	text-align:center;
+	/*margin:10px auto;*/
+	color:white;
+	font-family:'HANNA'!important;
+}
+.container{
+	font-family:'JUA'!important;
+}
+#signupbtn{
+	text-align:center;
+	margin:10px auto;
+}
+.card-img-bottom{
+	width:128px;
+	height:128px;
+}
+.card-img-center{
+	text-align:center;
+}
+#blueChar{
+	height:100%;
+}
+#forcharactor{
+	text-align:center;
 }
