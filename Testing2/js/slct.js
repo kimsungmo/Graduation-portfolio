@@ -1,8 +1,8 @@
-var workout="미선택";
-var sets="미선택";
-var reps="미선택";
-var weight="미선택";
-var rest_time=10;
+var workout="?";
+var sets="?";
+var reps="?";
+var weight="?";
+var rest_time='?';
 
 function confirm(){
 	//workout = $("input[name=workout]:checked").val();

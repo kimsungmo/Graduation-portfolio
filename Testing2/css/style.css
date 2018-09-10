@@ -66,6 +66,18 @@ h1{
 #blueChar{
 	height:100%;
 }
-#forcharactor{
+.mid{
 	text-align:center;
+}
+.var{
+	color:blue;
+}
+table.table-sm{
+	text-align:center;
+}
+#prnt{
+	margin:5px 0px 5px 0px;
+}
+#forlogout{
+	text-align:right;
 }

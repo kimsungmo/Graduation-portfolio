@@ -8,7 +8,14 @@
 	<title>Insert title here</title>
 </head>
 <body>
-	<h1>메뉴</h1>
+	<div class="jumbotron">
+		<h1>메뉴</h1>
+		<iframe name="ifrm" frameborder="0" width='0' height='0' ></iframe>
+		<form method="post" action="http://115.68.232.116/include/del_session.php" target="ifrm" id="forlogout">
+			<button class="btn btn-danger" id="logout">로그아웃</button>
+		</form>
+	</div>
+	
 	<div class="container">
         <div class="card">
         	<div class="card-body">
@@ -53,6 +60,6 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="/js/back.js"></script>
+	<script src="/js/goSignIn.js"></script>
 </body>
 </html>

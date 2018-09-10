@@ -13,9 +13,9 @@
 		<form name="woSelection" method="post" id="form">
 			<label for="workout-event">운동종목</label>
 			<div class="input-group" id="workout-event">
-				<input type="radio" class="form-control" name="workout" value="1" data-wo="dumbbell-curl"/>덤벨 컬
-				<input type="radio" class="form-control" name="workout" value="2" data-wo="push-up"/>푸시 업
-				<input type="radio" class="form-control" name="workout" value="3" data-wo="lateral-raise"/>레터럴 레이즈
+				<input type="radio" class="form-control" name="workout" value="1" data-wo="덤벨컬"/>덤벨 컬
+				<input type="radio" class="form-control" name="workout" value="2" data-wo="푸시업"/>푸시 업
+				<input type="radio" class="form-control" name="workout" value="3" data-wo="레터럴레이즈"/>레터럴 레이즈
 			</div>
 			<label for="sets">세트</label>
 			<div class="input-group">
@@ -38,16 +38,19 @@
 					<option value="25">25</option>
 				</select>		
 			</div>
-			<button type="button" id="btn" onclick="confirm()" class="btn btn-primary">내가 선택한 운동 확인</button>
-            <div id="prnt"></div>
-			<input value="아령찾기" class="submit btn btn-primary" id="toBlueHtml">
+			<div class="mid">
+				<button type="button" id="btn" onclick="confirm()" class="btn btn-primary">내가 선택한 운동 확인</button>
+	            <div id="prnt"></div>
+				<input value="아령찾기" class="submit btn btn-primary" id="toBlueHtml">
+			</div>
 		</form>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<!-- <script src="/lib/tau/mobile/js/tau.js"></script> -->
-	<script src="/js/back.js"></script>
+	<!--  <script src="/lib/tau/mobile/js/tau.js"></script>
+	<script src="/js/back.js"></script>-->
 	<script src="/js/slct.js"></script>
 	<script src="/js/sendAndMove.js"></script>
+	<script src="/js/goSelection.js"></script>
 </body>
 </html>

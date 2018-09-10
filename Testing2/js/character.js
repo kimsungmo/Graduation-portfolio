@@ -29,7 +29,11 @@ var breathAmt = 0;	//호흡의 총량을 결정할 변수
 var breathMax = 2;	//호흡의 max값을 결정할 변수
 var breathInterval = setInterval(updateBreath, 1000 / fps);	//숨을 쉬는 간격에 대한 변수
 var area = 5;
-prepareCanvas(document.getElementById("canvasDiv"), 250, 300);
+
+window.onload=function(){
+	prepareCanvas(document.getElementById("canvasDiv"), 250, 200);
+}
+
 function prepareCanvas(canvasDiv, canvasWidth, canvasHeight)	//canvas를 준비하는 변수
 {
 	canvas = document.createElement('canvas');	//canva요소 생성

@@ -20,15 +20,16 @@ $(function(){
 			},
 			success:function(json){
 				if(json.res=='good'){
-					location.replace('blue.html');
-					window.open("blue.html?workout:"+name+"&sets:"+sets+"&reps:"+reps+"&weights:"+weights+"&rest_time:"+rest_time);
+					location.replace('workout.html');
+					//blue.html이라는 문서를 열고 키:값을 넘겨준다.
+					window.open("workout.html?workout:"+name+"&sets:"+sets+"&reps:"+reps+"&weights:"+weights+"&rest_time:"+rest_time);
 				}else{
 					alert('DB 서버 오류');
 				}
 			},
 			error:function(){
 				alert('error');
-				console.log('error blue.html');
+				console.log('error workout.html');
 			}
 		})
 	});
