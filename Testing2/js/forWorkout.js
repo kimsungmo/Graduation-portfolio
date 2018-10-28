@@ -1,14 +1,9 @@
-//var backEventListener = null;
 var adapter = tizen.bluetooth.getDefaultAdapter();
 var addr;
-
 //window.open("blue.html?workout:"+name+"&sets:"+sets+"&reps:"+reps+"&weights:"+weights+"&rest_time:"+rest_time);
 var temp=location.href.split("?");
-//alert(temp);
 var data=temp[1].split(/:|&/);//data:workout,dumbbell-curl,sets,1,reps,2,weights,3,rest_time,10
-//alert(data);
 var name=decodeURI(data[1]);//이전 페이지에서 인코딩되어서 넘어 온 한글을 디코딩해야 안깨짐
-//alert('name'+decodeURI(name));
 var sets=data[3];
 var reps=data[5];
 var weights=data[7];
@@ -24,29 +19,17 @@ var cur_reps=0;
 var cur_rest_time=0;
 $("#cur_sets").html(cur_sets);
 $("#cur_reps").html(cur_reps);
-/*
-//adapter.registerRFCOMMServiceByUUID(serviceUUID, 'My service'); //블루투스 디바이스와 연결하고 데이터 주고 받기
-device.connectToServiceByUUID(serviceUUID, function(sock) {
-    console.log('socket connected');
-    socket = sock;
-}, function(error) {
-    console.log('Error while connecting: ' + error.message);
-});
-*/
-/*
-var unregister = function() { //뒤로가기
-    if ( backEventListener !== null ) {
-        document.removeEventListener( 'tizenhwkey', backEventListener );
-        backEventListener = null;
-        window.tizen.application.getCurrentApplication().exit();
-    }
-}
-*/
+
 var listDeviceElement;
 var listDevice;
 
-var set_done=function(){
-	///운동 종료 시 지금까지의 데이터 서버로 전송.
+$("#con").click(function(){
+	addr = "20:15:03:02:62:01";//addr변수에 블루투스의 주소값 넣음
+	adapter.getDevice(addr, /*addr 주소를 갖는 블루투스 연결*/onDeviceReady, function(e){
+		alert('연결실패');
+	});
+})
+var set_done=function(){///운동 종료 시 지금까지의 데이터 서버로 전송.
 	$.ajax({
 		type:'post',
 		dataType:'json',
@@ -58,7 +41,7 @@ var set_done=function(){
 		},
 		success:function(json){
 			if(json.res=='good'){
-				alert('현재 운동 정보 저장');
+				
 			}else{
 				alert('DB 서버 오류');
 			}
@@ -86,9 +69,7 @@ var set_done=function(){
 		}
 	})
 };
-
 var finish=function(){
-	///운동 종료 시 지금까지의 데이터 서버로 전송.
 	$.ajax({
 		type:'post',
 		dataType:'json',
@@ -100,7 +81,7 @@ var finish=function(){
 		},
 		success:function(json){
 			if(json.res=='good'){
-				//location.replace('workSettingPage.html');
+				
 			}else{
 				alert('DB 서버 오류');
 			}
@@ -131,10 +112,8 @@ var finish=function(){
 };
 var game_over=function(){
 	var end=alert('수고하셨습니다.');
-	//socket.writeData([0]);//아두이노 count 0으로 초기화
 	if(end==undefined){//alert 확인 시
 		finish(); //DB저장, 페이지 이동
-		//cur_sets=0;
 	}
 }
 var cancelDiscovery = function() {
@@ -145,7 +124,6 @@ var cancelDiscovery = function() {
        console.log("Error while stopDiscovery:" + e.message);
    });
 }
-
 var startDiscovery = function() {
 	var discoverDevicesSuccessCallback = {
         onstarted: function() {
@@ -162,45 +140,31 @@ var startDiscovery = function() {
         onfinished: function(devices) {
         }
      };
-
      // 소캣찾기
      adapter.discoverDevices(discoverDevicesSuccessCallback, function(e) {
          alert("디바이스를 찾을 수 없습니다."+e);
      });
 }
-
 var onSetPoweredError = function(e) {
-	/*alert(e.message);*/
 	alert('전원설정에러 발생');
 }
 var onSocketError = function(err){
-	//console.log(err);
-	/*alert(err.name);*/
 	alert('소켓에러 발생');
 }
-
 var onSocketConnected = function(socket) {
     console.log ("소켓이 연결됨");
-    socket.writeData([0]);
+    socket.writeData([0]);//운동 시작 시 아두이노의 count값을 0으로 초기화 해줘야 함.
     alert('운동 시작!');
-    socket.onmessage = function () { //운동이 끝나면 아두이노의 count값을 0으로 초기화 해줘야 함.
-    	count=socket.readData();
+    socket.onmessage=function(){
+    	count=socket.readData();//아두이노에서 값 받아오기
     	//cur_sets=count/reps;//이건 됌
     	cur_reps=count%reps;
-    	if(cur_sets>=sets){
-			game_over();
-		}else if((count!=0)&&(count%reps==0)){//지정된 반복 수만큼 운동했다면
-    		/*if(cur_sets>=sets){//목표 세트 달성,초과시 종료.
-    			alert('수고하셨습니다.');
-    			var end=confirm('운동 종료');
-    			socket.writeData([0]);
-    			if(end==true){
-    				cur_sets=0;
-    				finish(); //DB저장, 페이지 이동
-    				//location.replace('workSettingPage.html');
-    			}
-    		}else{*/
-    			cur_sets+=count/reps;//set에 반영
+    	if((count!=0)&&(count%reps==0)){//지정된 반복 수만큼 운동했다면
+			cur_sets+=count/reps;//set에 반영
+			if(cur_sets>=sets){//현재 세트가 지정된 세트보다 같거나 크면 DB에 데이터 저장 후 종료
+				alert('수고하셨습니다.');
+				finish();
+			}else{
 	    		temp_time=rest_time;
 	    		var rest_start=confirm('휴식 시작');
 	    		if(rest_start==true){
@@ -218,67 +182,17 @@ var onSocketConnected = function(socket) {
 		    			}
 		    		},1000);
 		    		cur_rest_time+=rest_time;
-		    		
-		    		/*if(cur_sets>=sets){
-		    			game_over();
-		    		}else{
-		    			set_done();
-		    		}*/
 	    		}
 	    		set_done();
-    		//}
+			}
     	}
-
-    	//alert(cur_sets+' '+cur_reps);
     	$("#cur_sets").html(cur_sets);
     	$("#cur_reps").html(cur_reps);
-    	/*function restTime(){
-    		cur_rest_time+=1;
-    		$("#cur_rest_time").html(cur_rest_time);//setInterval() 사용해서 1초마다 1더해서 초 만들어주기.
-    	}
-    	setInterval(restTime,1000);*/
-    	
-    	///운동 종료 시 지금까지의 데이터 서버로 전송.
-    	/*document.addEventListener('tizenhwkey', function(ev){
-    	if(ev.keyName==='back'){//confirm when user click back key
-    		alert(cur_sets+','+cur_reps+','+cur_rest_time);
-    		var res=confirm('운동을 종료하시겠습니까?');
-    		if(res==true){
-    			
-    			$.ajax({
-    				type:'post',
-    				dataType:'json',
-    				url:'http://115.68.232.116/records/intensityUp.php',
-    				data:{
-    					sets:cur_sets,
-    					reps:cur_reps,
-    					rest_time:cur_rest_time
-    				},
-    				success:function(json){
-    					if(json.res=='good'){
-    						location.replace('workSettingPage.html');
-    					}else{
-    						alert('DB 서버 오류');
-    					}
-    				},
-    				error:function(json){
-    					alert('error');
-    					alert(json+','+json.res);
-    					console.log('error workSettingPage.html');
-    				}
-    			});
-    			location.replace('workSettingPage.html');
-    			//tau.changePage('workSettingPage.html');can't send/receive the input datas in blue.html
-    			//tau.back();not work
-    		}
-    	}
-	});*/
     };
     socket.onclose = function() {
        alert("기기가 종료되었습니다." + socket.peer.name+socket);
     };
 };
-
 onDeviceReady = function(device){
 	console.log(device);
 	var uuids = "" + device.uuids;	// string형태로 변경
@@ -292,29 +206,9 @@ onDeviceReady = function(device){
 onBondingSuccess = function(device){
 	console.log("-----")
 	console.log(device);
-	/*document.getElementById("divDeviceInfo").innerHTML = 
-		"uuids:" + device.uuids + "<br>" + 
-		"name:" + device.name + "<br>" + 
-		"address:" + device.address + "<br>" + 
-		"isBonded:" + device.isBonded + "<br>" + 
-		"deviceClass:" + device.deviceClass + "<br>";
-	console.log("-----" + device.uuids);
-	adapter.registerRFCOMMServiceByUUID(serviceUUID, "My service", 
-            registerSuccessCallback, onError);*/
 }
-/*onBondingSuccessCallback = function (device) { //블루투스 디바이스와 본딩 생성
-    console.log('A bond is created - name: ' + device.name);
-}
-onErrorCallback = function (e) {
-    console.log('Cannot create a bond, reason: ' + e.message);
-}
-adapter.createBonding('35:F4:59:D1:7A:03', onBondingSuccessCallback, onErrorCallback);*/
 //Initialize function
 var init = function () {
-   /* if ( backEventListener !== null ) {
-        return;
-    }
-    */
     // TODO:: Do your initialization job
     console.log("init() called");
 	
@@ -322,22 +216,12 @@ var init = function () {
     listDevice = tau.widget.Listview(listDeviceElement);
     
     tau.event.on(listDeviceElement, "tap", function(event){//탐색된 블루투스 클릭 시
-    	/*document.getElementById("txtDeviceName").value = 
-    		event.target.getAttribute("devicename");
-    	document.getElementById("txtDeviceAddress").value = 
-    		event.target.getAttribute("deviceaddress");*/
     	alert('연결 중');
     	addr = event.target.getAttribute("deviceaddress");//addr변수에 블루투스의 주소값 넣음
-    	
     	adapter.getDevice(addr, /*addr 주소를 갖는 블루투스 연결*/onDeviceReady, function(e){
     		alert('연결실패');
     	});
-    	//tau.changePage("characterPage.html"); 
     });
-    
-    /*tau.event.on(document.getElementById("btnCreate"), "tap", function(){
-    	document.getElementById("divAdapter").innerHTML = "어댑터생성";
-    });*/
     
     tau.event.on(document.getElementById("btnDiscovery"), "tap", function(){
     	alert('기기를 찾는 중...');
@@ -346,53 +230,12 @@ var init = function () {
     
     document.addEventListener('tizenhwkey', function(ev){
     	if(ev.keyName==='back'){//confirm when user click back key
-    		//alert(cur_sets+','+cur_reps+','+cur_rest_time);
     		var res=confirm('운동을 종료하시겠습니까?');
     		if(res==true){
     			finish();
-    			//
     		}
     	}
     });
-    /*document.addEventListener('tizenhwkey', function(ev){
-    	if(ev.keyname==='back'){//confirm when user click back key
-    		var res=confirm('운동을 종료하시겠습니까?');
-    		if(res==true){
-    			location.place('workSettingPage.html');
-    		}
-    	}
-	});*/
-    
-    /*tau.event.on(document.getElementById("btnDevice"), "tap", function(){
-    	//adapter.getDevice(document.getElementById("txtDeviceAddress").value,
-    	adapter.getDevice(addr,
-    		onDeviceReady, 
-    		function(e) {alert('연결실패'); });
-    	//tau.changePage("#pageChar");   	
-    });*/
-    
-    /*var backEvent = function(e) {
-        if ( e.keyName == "back" ) {
-            try {
-                if ( $.mobile.urlHistory.activeIndex <= 0 ) {
-                    // if first page, terminate app
-                    unregister();
-                } else {
-                    // move previous page
-                    $.mobile.urlHistory.activeIndex -= 1;
-                    $.mobile.urlHistory.clearForward();
-                    window.history.back();
-                }
-            } catch( ex ) {
-                unregister();
-            }
-        }
-    }
-    
-    // add eventListener for tizenhwkey (Back Button)
-    document.addEventListener( 'tizenhwkey', backEvent );
-    backEventListener = backEvent;*/
 };
-
 $(document).bind( 'pageinit', init );
 $(document).unload( unregister );

@@ -15,7 +15,7 @@ $.showUser = function(workout){
             }else{
                 i=0;
                 var tbl = "";
-                tbl += '<table border=1><tr><th>date</th><th>sets</th><th>reps</th><th>weight</th></tr>'
+                tbl += '<table border=1 class="table"><thead class="thead-dark"><tr><th>date</th><th>sets</th><th>reps</th><th>weight</th></tr></thead>';
                 while(result[i]){
                     tbl += '<tr><td>'+result[i].date+'</td><td>'+result[i].sets+'</td><td>'+result[i].reps+'</td><td>'+result[i].weight+'</td></tr>';
                     i++;

@@ -17,103 +17,132 @@ $(function(){
 				if(result.success == false) {
 					alert(result.msg);
 					return;
-				}
-				r=result;
-				i=0,j=0;
-				var days=[];
-				var uniquedays=[];
-				var color=[];
-				var workouts=[];
-				var done=[];
-				var c = ['rgb(255, 99, 132)', //red
-					'rgb(255, 159, 64)', //orange
-					'rgb(255, 205, 86)', //yellow
-					'rgb(75, 192, 192)', //green
-					'rgb(54, 162, 235)', //blue
-					'rgb(153, 102, 255)', //purple
-					'rgb(201, 203, 207)' //grey
-				];
-				while(result[i]){//서버에서 가져온 data를 알맞게 배열에 넣음
-					days.push(result[i][7]);
-					workouts.push(result[i][0]);
-					done.push(parseInt(result[i][1]) * parseInt(result[i][2]) * parseInt(result[i][3]));
-					color.push(c[i]);
-					i+=1;
-				}
-				$.each(days,function(i,el){
-					if($.inArray(el,uniquedays)===-1)uniquedays.push(el);//배열 내에 el과 일치하는 값을 찾지 못하면 uniquedays에 날짜 삽입
-				});
-				var thirtyone=[];
-				for(i=0;i<31;i++){
-					thirtyone.push(i+1);
-				}
-				var barChartData = {//Schema for bar chart.
-					labels:thirtyone,
-					datasets:[
-					]
-				};
-			var ctx = document.getElementById('canvas').getContext('2d');//chart 그리기 위한 canvas
-			window.myBar = new Chart(ctx, {
-				type: 'bar',
-				data: barChartData,//위에서 설정한 object
-				options: {
-					title: {
-						display: true,
-						text: '월별 운동 기록'
-					},
-					tooltips: {//Print info during hover
-						mode: 'index',
-						intersect: false
-					},
-					responsive: true,
-					scales: {
-						xAxes: [{
-							stacked: true,
-						}],
-						yAxes: [{
-							stacked: true
-						}]
-					}
-				}
-			});
-			i=0;
-			var d;
-			var w;
-			var count=0;
-			var workset=[];
-			//var workval=[];
-			var k;
-			while(w=workouts[i]){//운동 하나 선택
-				j=0;
-				workset=[]; //운동 값
-				while(result[j]){ //전체 탐색
-					if(w==result[j][0]){//운동 같음
-						count=0;
-						for(k=1;k<=31;k++){
-							if(k==result[j][7]){//날짜가 같다면
-								workset.push(result[j][1]);
-							}else{
-								workset.push(0);//해당 사항 없으면 0 삽입
+				}else if(result.notnull!=true){//빈 데이터
+					alert('결과 값이 없습니다.');
+					var ctx = document.getElementById('canvas').getContext('2d');//chart 그리기 위한 canvas
+					window.myBar = new Chart(ctx, {
+						type: 'bar',
+						data: {},//barChartData,//위에서 설정한 object
+						options: {
+							title: {
+								display: true,
+								text: '월별 운동 기록'
+							},
+							tooltips: {//Print info during hover
+								mode: 'index',
+								intersect: false
+							},
+							responsive: true,
+							scales: {
+								xAxes: [{
+									stacked: true,
+								}],
+								yAxes: [{
+									stacked: true
+								}]
 							}
 						}
-						if(count==0){
-							workset.push(0);
-						}else{
-							workset.push(result[j][1]);//세트 저장
+					});
+					var newDataset = {
+						label: [],//운동 각각 하나
+						backgroundColor : [],//색깔 변하게
+						data: [] //날짜마다 수행한 운동 값, 운동 안했으면 0
+					};
+					barChartData.datasets.push(newDataset);
+					window.myBar.update();//chart 갱신
+				}else{
+					r=result;
+					i=0,j=0;
+					var days=[];
+					var uniquedays=[];
+					var color=[];
+					var workouts=[];
+					var uniqueworkouts=[];
+					var done=[];
+					var c = ['rgb(255, 99, 132)', //red
+						'rgb(255, 159, 64)', //orange
+						'rgb(255, 205, 86)', //yellow
+						'rgb(75, 192, 192)', //green
+						'rgb(54, 162, 235)', //blue
+						'rgb(153, 102, 255)', //purple
+						'rgb(201, 203, 207)' //grey
+					];
+					while(result[i]){//서버에서 가져온 data를 알맞게 배열에 넣음
+						days.push(result[i][7]);
+						workouts.push(result[i][0]);
+						done.push(parseInt(result[i][1]) * parseInt(result[i][2]) * parseInt(result[i][3]));
+						color.push(c[i]);
+						i+=1;
+					}
+					$.each(workouts,function(i,el){
+						if($.inArray(el,uniqueworkouts)===-1)uniqueworkouts.push(el);
+					});
+					$.each(days,function(i,el){
+						if($.inArray(el,uniquedays)===-1)uniquedays.push(el);//배열 내에 el과 일치하는 값을 찾지 못하면 uniquedays에 날짜 삽입
+					});
+					var thirtyone=[];
+					for(i=0;i<31;i++){
+						thirtyone.push(i+1);
+					}
+					var barChartData = {//Schema for bar chart.
+						labels:thirtyone,
+						datasets:[
+						]
+					};
+					var ctx = document.getElementById('canvas').getContext('2d');//chart 그리기 위한 canvas
+					window.myBar = new Chart(ctx, {
+						type: 'bar',
+						data: barChartData,//위에서 설정한 object
+						options: {
+							title: {
+								display: true,
+								text: '월별 운동 기록(세트 기준)'
+							},
+							tooltips: {//Print info during hover
+								mode: 'index',
+								intersect: false
+							},
+							responsive: true,
+							scales: {
+								xAxes: [{
+									stacked: true,
+								}],
+								yAxes: [{
+									stacked: true
+								}]
+							}
 						}
-					}	
-					j+=1;
+					});
+					i=0;
+					var d;
+					var w;
+					var count=0;
+					var workset=[];
+					var worksets=[];
+					var k;
+					while(w=uniqueworkouts[i]){//운동 하나 선택
+						j=0;
+						workset=[]; //운동 값
+						for(k=0;k<31;k++){
+							workset[k]=0;
+						}
+						while(result[j]){ //운동 기록 탐색
+							if(w==result[j][0]){//운동이 같다면
+								workset[result[j][7]-1]+=parseInt(result[j][1]);//차트상 day에 set 넣기
+							}
+							j+=1;
+						}
+						var newDataset = {
+							label: uniqueworkouts[i],//운동 각각 하나
+							backgroundColor : color[i],//색깔 변하게
+							data: workset //날짜마다 수행한 운동 값, 운동 안했으면 0
+						};
+						barChartData.datasets.push(newDataset);
+						i+=1;
+					}
+					window.myBar.update();//chart 갱신
 				}
-				var newDataset = {
-					label: [workouts[i]],//운동 각각 하나
-					backgroundColor : color[i],//색깔 변하게
-					data: workset //날짜마다 수행한 운동 값, 운동 안했으면 0
-				};
-				barChartData.datasets.push(newDataset);
-				window.myBar.update();//chart 갱신
-				i+=1;
-			}
-		},
+			},
 			error : function(xhr,status,error){
 				alert(error);
 			}
@@ -129,44 +158,34 @@ $(function(){
 		day = $("#day").val();
 		i=0;
 		while(r[i]){
-			if(day==r[i][7]){
-				j=0;
+			if(day==r[i][7]){//사용자가 선택한 날짜와 일치하는 데이터를 result에 넣기
 				result[i]=r[i];
-				while(j<8){
-					//alert(result[i][j]);
-					j+=1;
-				}
 			}
 			i+=1;
 		}
-		i=0;
-		while(result[i]){ //result의 끝까지 돌면서 arr 배열에 운동 포인트 계산한 값 넣기
-			arr.push(parseInt(result[i][1]) * parseInt(result[i][2]));
-			i+=1;
+		for(var j=0;j<i;j++){
+			if(result[j]!=null || result[j]!=undefined){
+			arr.push(parseInt(result[j][1])*parseInt(result[j][2])*parseInt(result[j][3])*0.01);
+			arr2.push(String(result[j][0])+': '+String(result[j][1])+'세트 '+String(result[j][2])+'회 '+String(result[j][3])+'kg'
+					+'시작'+String(result[j][4])+'종료'+String(result[j][5])+'운동시간'+String(result[j][6])+'환산 점수 ');
+			}
 		}
-		i=0;
-		while(result[i]){//arr2 배열에 값을 넣음
-			arr2.push(String(result[i][0])+': '+String(result[i][1])+'세트 '+String(result[i][2])+'회 '+String(result[i][3])+'kg'
-				+'\n'+'시작시간'+String(result[i][4])+'종료시간'+String(result[i][5])+'운동시간'+String(result[i][6])+'환산 점수 ');
-			i+=1;
-		}
-		alert(arr+'   '+arr2);//36,48
-		var j=i; //존재하는 운동의 갯수만큼 (?) 맞는지는 잘 모르겠음
-		while(j>0){
-			bc.push(back_color[j-1]);//bc 배열에 색깔 집어 넣기
-			j-=1;
+		var j=0;
+		while(j<i){
+			bc.push(back_color[j]);//bc 배열에 색깔 집어 넣기
+			j+=1;
 		}
 		var config = {
 	        type: 'pie',
 	        data: {
 	            datasets: [{
-	                data: arr,
+	                data: arr,//그래프 그릴 때 쓰는 실제 값
 	                backgroundColor: bc,
 	                label: 'Dataset 1'
 	            },
 	            ],
-	            labels: //운동 종목 , 세트, 반복 횟수, 무게
-	                      arr2
+	            labels: //운동 종목,세트,반복 횟수,무게 등의 정보
+	            	arr2
 	        },
 	        options: {
 	            responsive: true,
@@ -175,13 +194,12 @@ $(function(){
 	            },
 	            title: {
 	                display: true,
-	                text: "님의 기록"
+	                text:day+"기록"
 	            }
 	        }
 	    };
 		var ctx = document.getElementById("mychart").getContext("2d");
         window.myDoughnut = new Chart(ctx, config);		
 	}
-	//화면을 가로로
 	screen.lockOrientation("landscape-primary");
 });
